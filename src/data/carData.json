@@ -1,0 +1,75 @@
+[
+    {
+        "id":0,
+        "name":"Rolls - Royce",
+        "quality":"Sedan",
+        "country":"London, United Kingdom",
+        "image":"/car1.png",
+        "amount":" $332,500",
+        "building":"Rolls-Royce Motor Cars"
+    },
+    {
+        "id":1,
+        "name":"Honda Civic",
+        "quality":"Sedan",
+        "country":"London, United Kingdom",
+        "image":"/car2.png",
+        "amount":"  $20,000",
+        "building":"Rolls-Royce Motor Cars"
+    },{
+        "id":2,
+        "name":"Koenigsegg Jesko",
+        "quality":"Hypercar",
+        "country":"Ängelholm, Sweden",
+        "image":"/car3.png",
+        "amount":"$2,800,000",
+        "building":"Koenigsegg Dealership"
+    }
+    ,
+    {
+        "id":3,
+        "name":"MG ZX Excite",
+        "quality":"Hatchback",
+        "country":"Shanghai, China",
+        "image":"/car4.png",
+        "amount":"$21,000",
+        "building":"MG Dealership"
+    }
+    ,
+    {
+        "id":4,
+        "name":"Rolls - Royce",
+        "quality":"Sedan",
+        "country":"London, United Kingdom",
+        "image":"/car1.png",
+        "amount":" $332,500",
+        "building":"Rolls-Royce Motor Cars"
+    },
+    {
+        "id":5,
+        "name":" Nissan GT-R",
+        "quality":"Sports Car",
+        "country":" Yokohama, Japan",
+        "image":"/car5.png",
+        "amount":" $113,540",
+        "building":"Nissan Dealership"
+    },
+    {
+        "id":6,
+        "name":"Koenigsegg Jesko",
+        "quality":"Hypercar",
+        "country":"Ängelholm, Sweden",
+        "image":"/car3.png",
+        "amount":"$2,800,000",
+        "building":"Koenigsegg Dealership"
+    },
+    {
+        "id":7,
+        "name":"MG ZX Excite",
+        "quality":"Hatchback",
+        "country":"Shanghai, China",
+        "image":"/car4.png",
+        "amount":"$21,000",
+        "building":"MG Dealership"
+    }
+]
