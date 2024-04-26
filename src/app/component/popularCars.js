@@ -9,13 +9,13 @@ import Data from "../../data/carData.json"
 const PopularCars = () => {
     console.log(Data,"DATA")
     return (
-        <div className='md:w-[80%] w-[90%] mx-auto md:mt-20 mt-5 '>
+        <div className='md:w-[80%] w-[90%] mx-auto md:mt-14 mt-5 '>
             <div className=' mt-20 flex items-center justify-between'>
 
                 <h1 className='md:text-4xl text-2xl font-medium text-[#90A3BF]'>Popular Cars</h1>
                 <button className='text-[#0B5CFF] bg-[#0B5CFF] bg-opacity-30 md:rounded-xl rounded-md cursor-pointer md:p-3 p-1 md:w-24 w-20 font-medium md:text-md text-sm text-center'>View All</button>
             </div>
-            <div className='mt-14 grid xl:grid-cols-4 lg:grid-cols-3  md:grid-cols-2 gris-cols-1 gap-5'>
+            <div className='mt-14 grid xl:grid-cols-4 lg:grid-cols-3 justify-center  md:grid-cols-2 gris-cols-1 gap-5'>
                 {Data.map((item) => (
                     <div className='2xl:w-[340px] w-[260px] mb-20 rounded-3xl 2xl:p-10 p-6 bg-white 2xl:h-[450px] h-[380px] relative shadow-xl'>
 
@@ -53,7 +53,7 @@ const PopularCars = () => {
                     </div>
                ) ) }
             </div>
-            <button className='w-60 p-5 rounded-2xl text-center text-md text-white bg-[#0B5CFF] flex justify-center mx-auto mt-20 mb-40'>Show more cars</button>
+            <button className='md:w-60 w-40 md:p-5 p-3 rounded-2xl text-center text-md text-white bg-[#0B5CFF] flex justify-center mx-auto mt-10 mb-32'>Show more cars</button>
         </div>
     )
 }

@@ -4,7 +4,7 @@ import PopularCars from './component/popularCars';
 const Home = () => {
   return (
     <>
-   <div className='homebanner w-full md:h-[60vh] h-[20vh] flex flex-col justify-center text-center items-center'>
+   <div className='homebanner w-full md:h-[60vh] h-[40vh] flex flex-col justify-center text-center items-center'>
       <div className='md:w-[50%] w-[80%] mx-auto '>
         <button className='bg-[#0B5CFF] text-white md:p-5 md:text-sm text-[10px]   p-2 md:rounded-xl rounded-lg mx-auto w-40 text-center md:w-52'>Explore Used Cars</button>
         <div className='w-full relative md:mt-8 mt-3'> 
