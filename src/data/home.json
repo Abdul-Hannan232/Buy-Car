@@ -17,8 +17,9 @@
         "image":"/car4.png",
         "amount":"  $20,000",
         "building":"Rolls-Royce Motor Cars",
-        "bookmark":true
-    },{
+        "bookmark":false
+    },
+    {
         "id":2,
         "name":"Koenigsegg Jesko",
         "quality":"Hypercar",
@@ -26,7 +27,7 @@
         "image":"/car3.png",
         "amount":"$2,800,000",
         "building":"Koenigsegg Dealership",
-        "bookmark":true
+        "bookmark":false
     }
     ,
     {
@@ -49,7 +50,8 @@
         "amount":" $332,500",
         "building":"Rolls-Royce Motor Cars",
         "bookmark":true
-    },
+    }
+    ,
     {
         "id":5,
         "name":" Nissan GT-R",
@@ -58,7 +60,7 @@
         "image":"/car5.png",
         "amount":" $113,540",
         "building":"Nissan Dealership",
-        "bookmark":true
+        "bookmark":false
     },
     {
         "id":6,
@@ -68,7 +70,7 @@
         "image":"/car3.png",
         "amount":"$2,800,000",
         "building":"Koenigsegg Dealership",
-        "bookmark":true
+        "bookmark":false
     },
     {
         "id":7,

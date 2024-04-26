@@ -7,22 +7,29 @@ import { FaLocationDot } from "react-icons/fa6";
 import { TbBuilding } from "react-icons/tb";
 import { PiMedalFill } from "react-icons/pi";
 import { CiHeart } from "react-icons/ci";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-import Data from "../../data/carData.json"
-const PopularCars = () => {
+const PopularCars = ({ Data }) => {
 
     const [clickedItems, setClickedItems] = useState([]);
-
     const handleClick = (index) => {
-      const newClickedItems = [...clickedItems];
-      newClickedItems[index] = !newClickedItems[index];
-      setClickedItems(newClickedItems);
+        const newClickedItems = [...clickedItems];
+        newClickedItems[index] = !newClickedItems[index];
+        setClickedItems(newClickedItems);
+        const isBookmarked = newClickedItems[index];
+        const message = isBookmarked ? 'Add into Bookmarked' : 'Remove From Bookmarked';
+        // Show toast notification
+        toast.success(message);
+        console.log(clickedItems, "data");
+
     };
-    console.log(Data, "DATA")
     return (
         <div className=' mx-auto md:mt-14 mt-5 '>
+            <ToastContainer />
+
             <div className='mt-14 grid xl:grid-cols-4 lg:grid-cols-3 justify-center  md:grid-cols-2 gris-cols-1 gap-5'>
-                {Data.map((item,index) => (
+                {Data.map((item, index) => (
                     <div key={index} className='2xl:w-[340px] w-[260px] mb-20 rounded-3xl 2xl:p-10 p-6 bg-white 2xl:h-[450px] h-[380px] relative shadow-xl'>
 
                         <div className='flex justify-between'>
@@ -31,9 +38,9 @@ const PopularCars = () => {
                                 <p className='text-[#90A3BF] text-md mt-1'>{item.quality}</p>
                             </div>
                             <IoHeart
-              className={`text-xl cursor-pointer ${clickedItems[index] ? 'text-red-500' : 'text-[#90A3BF]'}`}
-              onClick={() => handleClick(index)}
-            />
+                                className={`text-xl cursor-pointer   ${item.bookmark ? "text-red-500" : ""} ${clickedItems[index] ? 'text-red-500' : 'text-[#90A3BF]'}`}
+                                onClick={() => handleClick(index)}
+                            />
                         </div><br />
                         <Image src={item.image} alt="car" width={180} height={56} className='w-44 h-20' />
                         <h1 className='2xl:text-4xl text-2xl font-bold text-[#0B5CFF] 2xl:my-7 my-4'>{item.amount}</h1>

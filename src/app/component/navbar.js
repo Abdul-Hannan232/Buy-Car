@@ -13,7 +13,6 @@ const Navbar = () => {
     const handleLoginClick = () => {
         setActiveButton('login');
     };
-
     const handleSignupClick = () => {
         setActiveButton('signup');
     };
