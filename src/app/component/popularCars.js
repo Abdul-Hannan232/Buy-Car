@@ -24,7 +24,7 @@ const PopularCars = () => {
                                 <h1 className='2xl:text-2xl text-xl font-bold'>{item.name}</h1>
                                 <p className='text-[#90A3BF] text-md mt-1'>{item.quality}</p>
                             </div>
-                            <IoHeart className='md:text-2xl text-xl text-[#ED3F3F]' />
+                            <IoHeart className=' text-xl cursor-pointer text-[#ED3F3F]' />
 
                         </div><br />
                         <Image src={item.image} alt="car" width={180} height={56} className='w-44 h-20' />
@@ -48,12 +48,12 @@ const PopularCars = () => {
 
                             <p className=' 2xl:text-sm text-xs  text-[#90A3BF] font-bold'>{item.building}</p>
                         </div>
-                        <button className='w-44  absolute left-0 right-0 2xl:mt-10  mt-8 flex justify-center  mx-auto text-white bg-[#0B5CFF] text-center py-3 rounded-xl text-md font-medium'>Check Availability </button>
+                        <button className='w-44  absolute left-0 right-0 hover:bg-opacity-90 2xl:mt-10  mt-8 flex justify-center  mx-auto text-white bg-[#0B5CFF] text-center py-3 rounded-xl text-md font-medium'>Check Availability </button>
 
                     </div>
                ) ) }
             </div>
-            <button className='md:w-60 w-40 md:p-5 p-3 rounded-2xl text-center text-md text-white bg-[#0B5CFF] flex justify-center mx-auto mt-10 mb-32'>Show more cars</button>
+            <button className='md:w-60 w-40 md:p-5 p-3 rounded-2xl hover:bg-opacity-90 text-center text-md text-white bg-[#0B5CFF] flex justify-center mx-auto mt-10 mb-32'>Show more cars</button>
         </div>
     )
 }

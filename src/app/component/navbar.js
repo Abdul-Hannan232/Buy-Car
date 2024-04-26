@@ -23,8 +23,8 @@ const Navbar = () => {
     }
 
     return (
-       <div className='bg-white shadow-xl '>
-         <div className='flex relative bg-white  items-center xl:justify-around  justify-between  w-full mx-auto xl:p-3  px-2 py-5'>
+       <div className='bg-white shadow-xl fixed left-0 right-0 top-0 z-40 '>
+         <div className='flex relative bg-white  items-center xl:justify-around  justify-between  w-full mx-auto xl:p-3  px-2 py-3'>
             <div className='xl:border-r-[#CACACA] xl:pr-5 xl:border-2 border-transparent'>
                 <Image src="/logo.png" alt="Logo" width={90} height={26} className='xl:w-48  w-32 ' />
             </div>
@@ -37,24 +37,24 @@ const Navbar = () => {
             </div>
             <div className='flex items-center xl:space-x-3 space-x-2'>
                 <div className=' md:w-12 md:h-12 w-8 h-8   xl:rounded-xl rounded-lg bg-[#F6F7F9] mx-auto flex items-center  flex-col justify-center'>
-                    <Image src="/setting-icon.png" alt="setting-icon" width={28} height={28} className='xl:w-[20px] xl:h-[20px] w-4 h-4' />
+                    <Image src="/setting-icon.png" alt="setting-icon" width={28} height={28} className='xl:w-[20px] cursor-pointer xl:h-[20px] w-4 h-4' />
                 </div>
                 <div className=' md:w-12 md:h-12 w-8 h-8   xl:rounded-xl rounded-lg bg-[#F6F7F9] mx-auto flex items-center  flex-col justify-center'>
-                    <LuHeart className='text-[#0B5CFF] xl:text-xl text-md' />
+                    <LuHeart className='text-[#0B5CFF] cursor-pointer xl:text-xl text-md' />
                 </div>
                 <div onClick={navbarDropDown} className=' md:w-12 md:h-12 w-8 h-8   xl:rounded-2xl rounded-lg xl:hidden block bg-[#0B5CFF] mx-auto flex items-center  flex-col justify-center'>
-                    <IoIosMenu className='text-white xl:text-3xl text-xl' />
+                    <IoIosMenu className='text-white cursor-pointer xl:text-3xl text-xl' />
                 </div>
                 <div className='flex items-center gap-1 xl:border-[#0B5CFF] xl:border-2 xl:rounded-2xl xl:p-1'>
                     <button
-                        className={`focus:bg-[#0B5CFF] xl:block hidden cursor-pointer w-24 text-sm    text-white rounded-xl text-center p-3 ${activeButton === 'login' ? 'bg-[#0B5CFF]' : ''
+                        className={`focus:bg-[#0B5CFF] xl:block hidden cursor-pointer   w-24 text-sm    text-black rounded-xl text-center p-3 ${activeButton === 'login' ? 'bg-[#0B5CFF] text-white' : ''
                             }`}
                         onClick={handleLoginClick}
                     >
                         Login
                     </button>
                     <button
-                        className={`focus:bg-[#0B5CFF]  xl:block hidden cursor-pointer w-24 text-sm       text-white rounded-xl text-center p-3 ${activeButton === 'signup' ? 'bg-[#0B5CFF]' : ''
+                        className={`focus:bg-[#0B5CFF]  xl:block hidden cursor-pointer  w-24 text-sm       text-black rounded-xl text-center p-3 ${activeButton === 'signup' ? 'bg-[#0B5CFF] text-white' : ''
                             }`}
                         onClick={handleSignupClick}
                     >
