@@ -7,7 +7,6 @@ import { IoIosMenu } from "react-icons/io";
 import { RiHome5Line } from "react-icons/ri";
 import { LiaCarSolid } from "react-icons/lia";
 import { TbCalculator } from "react-icons/tb";
-
 const Navbar = () => {
     const [activeButton, setActiveButton] = useState('signup');
     const [dropDown, setDropDown] = useState(false)
@@ -39,9 +38,12 @@ const Navbar = () => {
                 <div className=' md:w-12 md:h-12 w-8 h-8   xl:rounded-xl rounded-lg bg-[#F6F7F9] mx-auto flex items-center  flex-col justify-center'>
                     <Image src="/setting-icon.png" alt="setting-icon" width={28} height={28} className='xl:w-[20px] cursor-pointer xl:h-[20px] w-4 h-4' />
                 </div>
-                <div className=' md:w-12 md:h-12 w-8 h-8   xl:rounded-xl rounded-lg bg-[#F6F7F9] mx-auto flex items-center  flex-col justify-center'>
+               <Link href="/bookmark">
+               <div className=' md:w-12 md:h-12 w-8 h-8   xl:rounded-xl rounded-lg bg-[#F6F7F9] mx-auto flex items-center  flex-col justify-center'>
                     <LuHeart className='text-[#0B5CFF] cursor-pointer xl:text-xl text-md' />
                 </div>
+                </Link>
+                
                 <div onClick={navbarDropDown} className=' md:w-12 md:h-12 w-8 h-8   xl:rounded-2xl rounded-lg xl:hidden block bg-[#0B5CFF] mx-auto flex items-center  flex-col justify-center'>
                     <IoIosMenu className='text-white cursor-pointer xl:text-3xl text-xl' />
                 </div>
