@@ -24,37 +24,37 @@ const Navbar = () => {
 
     return (
        <div className='bg-white shadow-xl '>
-         <div className='flex relative bg-white  items-center xl:justify-around  justify-between  w-[95%] mx-auto xl:p-10  px-2 py-5'>
-            <div className='xl:border-r-[#CACACA] xl:pr-10 xl:border-2 border-transparent'>
-                <Image src="/website-logo.png" alt="Logo" width={102} height={31} className='xl:w-64  w-32 ' />
+         <div className='flex relative bg-white  items-center xl:justify-around  justify-between  w-full mx-auto xl:p-3  px-2 py-5'>
+            <div className='xl:border-r-[#CACACA] xl:pr-5 xl:border-2 border-transparent'>
+                <Image src="/website-logo.png" alt="Logo" width={90} height={26} className='xl:w-48  w-32 ' />
             </div>
             <div className='xl:block hidden'>
-                <ul className='text-xl font-medium flex items-center xl:space-x-20 space-x-4  ' >
+                <ul className='text-md font-medium flex items-center xl:space-x-10 space-x-4  ' >
                     <li className='hover:border-b-black border-transparent pb-1 border-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-700 '><Link href="#">Home</Link></li>
                     <li className='hover:border-b-black border-transparent pb-1 border-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-700 '><Link href="#">Used Cars</Link></li>
                     <li className='hover:border-b-black border-transparent pb-1 border-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-700 '><Link href="#">Car Payment Calculator</Link></li>
                 </ul>
             </div>
-            <div className='flex items-center xl:space-x-5 space-x-2'>
-                <div className='xl:w-16 xl:h-16 md:w-12 md:h-12 w-8 h-8   xl:rounded-2xl rounded-lg bg-[#F6F7F9] mx-auto flex items-center  flex-col justify-center'>
-                    <Image src="/setting-icon.png" alt="setting-icon" width={28} height={28} className='xl:w-[28px] xl:h-[28px] w-4 h-4' />
+            <div className='flex items-center xl:space-x-3 space-x-2'>
+                <div className=' md:w-12 md:h-12 w-8 h-8   xl:rounded-xl rounded-lg bg-[#F6F7F9] mx-auto flex items-center  flex-col justify-center'>
+                    <Image src="/setting-icon.png" alt="setting-icon" width={28} height={28} className='xl:w-[20px] xl:h-[20px] w-4 h-4' />
                 </div>
-                <div className='xl:w-16 xl:h-16 md:w-12 md:h-12 w-8 h-8   xl:rounded-2xl rounded-lg bg-[#F6F7F9] mx-auto flex items-center  flex-col justify-center'>
-                    <LuHeart className='text-[#0B5CFF] xl:text-3xl md:text-xl text-md' />
+                <div className=' md:w-12 md:h-12 w-8 h-8   xl:rounded-xl rounded-lg bg-[#F6F7F9] mx-auto flex items-center  flex-col justify-center'>
+                    <LuHeart className='text-[#0B5CFF] xl:text-xl text-md' />
                 </div>
-                <div onClick={navbarDropDown} className='xl:w-16 xl:h-16 md:w-12 md:h-12 w-8 h-8   xl:rounded-2xl rounded-lg xl:hidden block bg-[#0B5CFF] mx-auto flex items-center  flex-col justify-center'>
+                <div onClick={navbarDropDown} className=' md:w-12 md:h-12 w-8 h-8   xl:rounded-2xl rounded-lg xl:hidden block bg-[#0B5CFF] mx-auto flex items-center  flex-col justify-center'>
                     <IoIosMenu className='text-white xl:text-3xl text-xl' />
                 </div>
-                <div className='flex items-center gap-1 xl:border-[#0B5CFF] xl:border-2 xl:rounded-3xl xl:p-2'>
+                <div className='flex items-center gap-1 xl:border-[#0B5CFF] xl:border-2 xl:rounded-2xl xl:p-1'>
                     <button
-                        className={`focus:bg-[#0B5CFF] xl:block hidden cursor-pointer w-28 text-xl text-white rounded-2xl text-center p-3 ${activeButton === 'login' ? 'bg-[#0B5CFF]' : ''
+                        className={`focus:bg-[#0B5CFF] xl:block hidden cursor-pointer w-24 text-sm    text-white rounded-xl text-center p-3 ${activeButton === 'login' ? 'bg-[#0B5CFF]' : ''
                             }`}
                         onClick={handleLoginClick}
                     >
                         Login
                     </button>
                     <button
-                        className={`focus:bg-[#0B5CFF]  xl:block hidden cursor-pointer w-28 text-xl text-white rounded-2xl text-center p-3 ${activeButton === 'signup' ? 'bg-[#0B5CFF]' : ''
+                        className={`focus:bg-[#0B5CFF]  xl:block hidden cursor-pointer w-24 text-sm       text-white rounded-xl text-center p-3 ${activeButton === 'signup' ? 'bg-[#0B5CFF]' : ''
                             }`}
                         onClick={handleSignupClick}
                     >
