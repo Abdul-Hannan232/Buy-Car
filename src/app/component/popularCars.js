@@ -15,40 +15,40 @@ const PopularCars = () => {
                 <h1 className='md:text-4xl text-2xl font-medium text-[#90A3BF]'>Popular Cars</h1>
                 <button className='text-[#0B5CFF] bg-[#0B5CFF] bg-opacity-30 md:rounded-xl rounded-md cursor-pointer md:p-3 p-1 md:w-24 w-20 font-medium md:text-md text-sm text-center'>View All</button>
             </div>
-            <div className='mt-20 grid xl:grid-cols-4 lg:grid-cols-3  md:grid-cols-2 gris-cols-1 gap-5'>
+            <div className='mt-14 grid xl:grid-cols-4 lg:grid-cols-3  md:grid-cols-2 gris-cols-1 gap-5'>
                 {Data.map((item) => (
-                    <div className='md:w-[350px] mb-20 rounded-3xl p-8 bg-white h-[520px] relative shadow-xl'>
+                    <div className='2xl:w-[340px] w-[260px] mb-20 rounded-3xl 2xl:p-10 p-6 bg-white 2xl:h-[450px] h-[380px] relative shadow-xl'>
 
                         <div className='flex justify-between'>
                             <div>
                                 <h1 className='2xl:text-2xl text-xl font-bold'>{item.name}</h1>
                                 <p className='text-[#90A3BF] text-md mt-1'>{item.quality}</p>
                             </div>
-                            <IoHeart className='md:text-3xl text-xl text-[#ED3F3F]' />
+                            <IoHeart className='md:text-2xl text-xl text-[#ED3F3F]' />
 
                         </div><br />
                         <Image src={item.image} alt="car" width={180} height={56} className='w-44 h-20' />
                         <h1 className='2xl:text-4xl text-2xl font-bold text-[#0B5CFF] 2xl:my-7 my-4'>{item.amount}</h1>
                         <div className='flex items-center space-x-1'>
-                            <PiMedalFill className='text-md text-[#90A3BF] text-3xl mr-2' />
-                            <p className='text-sm text-[#90A3BF] '>4.0</p>
-                            <IoMdStar className=' text-[#FBAD39] text-sm' />
-                            <IoMdStar className=' text-[#FBAD39] text-sm' />
-                            <IoMdStar className=' text-[#FBAD39] text-sm' />
-                            <IoMdStar className=' text-[#FBAD39] text-sm' />
+                            <PiMedalFill className='2xl:text-md text-sm  text-[#90A3BF] text-3xl mr-2' />
+                            <p className='2xl:text-sm text-xs text-[#90A3BF] '>4.0</p>
+                            <IoMdStar className=' text-[#FBAD39] 2xl:text-sm text-xs' />
+                            <IoMdStar className=' text-[#FBAD39] 2xl:text-sm text-xs' />
+                            <IoMdStar className=' text-[#FBAD39] 2xl:text-sm text-xs' />
+                            <IoMdStar className=' text-[#FBAD39] 2xl:text-sm text-xs' />
                             <IoMdStar className=' focus:text-[#FBAD39] text-md text-[#90A3BF]' />
-                            <p className='text-xs text-[#90A3BF] font-bold'>(32 reviews)</p>
+                            <p className='2xl:text-xs text-[10px] text-[#90A3BF] font-bold'>(32 reviews)</p>
                         </div>
                         <div className='flex items-center my-3 gap-2 space-x-1'>
-                            <FaLocationDot className='text-md text-[#90A3BF] text-3xl' />
-                            <p className='text-sm text-[#90A3BF] font-bold'>{item.country}</p>
+                            <FaLocationDot className='2xl:text-md text-sm  text-[#90A3BF] text-3xl' />
+                            <p className='2xl:text-sm text-xs text-[#90A3BF] font-bold'>{item.country}</p>
                         </div>
                         <div className='flex items-center gap-2 space-x-1'>
-                            <TbBuilding className='text-md text-[#90A3BF] text-3xl' />
+                            <TbBuilding className='2xl:text-md text-sm text-[#90A3BF] text-3xl' />
 
-                            <p className=' text-sm  text-[#90A3BF] font-bold'>{item.building}</p>
+                            <p className=' 2xl:text-sm text-xs  text-[#90A3BF] font-bold'>{item.building}</p>
                         </div>
-                        <button className='w-44  absolute left-0 right-0 2xl:mt-6 mt-10 flex justify-center  mx-auto text-white bg-[#0B5CFF] text-center py-5 rounded-xl text-md font-medium'>Check Availability </button>
+                        <button className='w-44  absolute left-0 right-0 2xl:mt-10  mt-8 flex justify-center  mx-auto text-white bg-[#0B5CFF] text-center py-3 rounded-xl text-md font-medium'>Check Availability </button>
 
                     </div>
                ) ) }

@@ -26,13 +26,13 @@ const Navbar = () => {
        <div className='bg-white shadow-xl '>
          <div className='flex relative bg-white  items-center xl:justify-around  justify-between  w-full mx-auto xl:p-3  px-2 py-5'>
             <div className='xl:border-r-[#CACACA] xl:pr-5 xl:border-2 border-transparent'>
-                <Image src="/website-logo.png" alt="Logo" width={90} height={26} className='xl:w-48  w-32 ' />
+                <Image src="/logo.png" alt="Logo" width={90} height={26} className='xl:w-48  w-32 ' />
             </div>
             <div className='xl:block hidden'>
                 <ul className='text-md font-medium flex items-center xl:space-x-10 space-x-4  ' >
-                    <li className='hover:border-b-black border-transparent pb-1 border-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-700 '><Link href="#">Home</Link></li>
-                    <li className='hover:border-b-black border-transparent pb-1 border-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-700 '><Link href="#">Used Cars</Link></li>
-                    <li className='hover:border-b-black border-transparent pb-1 border-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-700 '><Link href="#">Car Payment Calculator</Link></li>
+                    <li className='hover:text-[#0B5CFF]  transition ease-in-out delay-90 hover:-translate-y-1 hover:scale-60  duration-500 '><Link href="#">Home</Link></li>
+                    <li className='hover:text-[#0B5CFF]  transition ease-in-out delay-90 hover:-translate-y-1 hover:scale-60  duration-500 '><Link href="#">Used Cars</Link></li>
+                    <li className='hover:text-[#0B5CFF]  transition ease-in-out delay-90 hover:-translate-y-1 hover:scale-60  duration-500 '><Link href="#">Car Payment Calculator</Link></li>
                 </ul>
             </div>
             <div className='flex items-center xl:space-x-3 space-x-2'>
