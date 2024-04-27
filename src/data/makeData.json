@@ -1,0 +1,42 @@
+[
+    {
+        "name": "All",
+        "count": "(2,367)"
+    },
+    {
+        "name": "Honda",
+        "count": "(989)"
+    },
+    {
+        "name": "Ford",
+        "count": "(475)"
+    },
+    {
+        "name": "Tesla",
+        "count": "(281)"
+    },
+    {
+        "name": "Volkswagen",
+        "count": "(56)"
+    },
+    {
+        "name": "BMW",
+        "count": "(80)"
+    },
+    {
+        "name": "Chevrolet",
+        "count": "(13)"
+    },
+    {
+        "name": "Mercedes-Benz",
+        "count": "(6)"
+    },
+    {
+        "name": "Jeep",
+        "count": "(32)"
+    },
+    {
+        "name": "Porche",
+        "count": "(18)"
+    }
+]

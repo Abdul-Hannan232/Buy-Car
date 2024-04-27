@@ -3,17 +3,18 @@ import React, { useState } from 'react'
 import { TbFilterSearch } from "react-icons/tb";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { MdOutlineKeyboardArrowUp } from "react-icons/md";
-import { CiSearch } from "react-icons/ci";
-
+import makePorch from "../../data/makeData.json"
+import model from "../../data/model.json"
+import DropdownWithSearch from '../component/dropdownWithSearch';
 const UsedCar = () => {
     const [fundDrop, setFundDrop] = useState(false)
-    const [porche, setPorche] = useState(false)
-
+    const [gtThree, setGtThree] = useState(false)
     const fundamentalsDropdown = () => {
         setFundDrop(!fundDrop)
     }
-    const porcheDrop = () => {
-        setPorche(!porche)
+
+    const gtThreeData = () => {
+        setGtThree(!gtThree)
     }
     return (
         <div className='mt-40 h-screen'>
@@ -29,7 +30,7 @@ const UsedCar = () => {
                     </button>
 
                     {/* fundamentals */}
-                    <div className='rounded-xl  border p-3 mt-5'>
+                    <div className='rounded-xl relative  border p-3 mt-5 bg-white'>
                         <div className=' flex justify-between items-center  cursor-pointer' onClick={fundamentalsDropdown}>
                             <h1 className='text-xl text-black font-medium'>Fundamentals</h1>
                             {fundDrop ? <MdOutlineKeyboardArrowUp className='text-2xl' /> : <MdKeyboardArrowDown className='text-2xl' />}
@@ -37,82 +38,22 @@ const UsedCar = () => {
                         {fundDrop && (
                             <>
                                 <hr className='border my-3' />
-                                <div onClick={porcheDrop} className='bg-[#F6F7F9] rounded-xl p-3 flex justify-between items-center cursor-pointer '>
-                                    <div>
-                                        <p className='text-xs text-black'>Make</p>
-                                        <h1 className='text-md text-[#90A3BF] '>Porche</h1>
-                                    </div>
 
-                                    <MdKeyboardArrowDown className='text-2xl' />
-                                </div>
-                                {porche && (
-                                    <div className='mt-5'>
-                                        <div className='w-full relative'>
-                                            <CiSearch className='absolute left-3  top-2 text-[#787878] md:text-md text-xl ' />
-                                            <input type='text' placeholder='Search by keyword' className='bg-[#F6F7F9] p-2 pl-9 text-xs text-[#90A3BF] focus:border-[#0B5CFF] outline-none border-2 border-white w-full  rounded-xl ' />
-                                        </div>
-                                        <div className='flex items-center mt-5 space-x-2 text-md pl-3 hover:bg-[#0B5CFF] p-1 hover:text-white rounded-lg cursor-pointer'>
-                                            <input type="checkbox" className='border-[#787878] w-4 h-4' />
-                                            <h1>All</h1>
-                                            <p className='text-[10px] text-[#90A3BF]'>(2,367)</p>
-                                        </div>
-                                        <div className='flex items-center mt-2 space-x-2 text-md pl-3 hover:bg-[#0B5CFF] p-1 hover:text-white rounded-lg cursor-pointer'>
-                                            <input type="checkbox" className='border-[#787878] w-4 h-4' />
-                                            <h1>Honda</h1>
-                                            <p className='text-[10px] text-[#90A3BF]'>(989)</p>
-                                        </div>
-                                        <div className='flex items-center mt-2 space-x-2 text-md pl-3 hover:bg-[#0B5CFF] p-1 hover:text-white rounded-lg cursor-pointer'>
-                                            <input type="checkbox" className='border-[#787878] w-4 h-4' />
-                                            <h1>Ford</h1>
-                                            <p className='text-[10px] text-[#90A3BF]'>(281)</p>
-                                        </div>
-                                        <div className='flex items-center mt-2 space-x-2 text-md pl-3 hover:bg-[#0B5CFF] p-1 hover:text-white rounded-lg cursor-pointer'>
-                                            <input type="checkbox" className='border-[#787878] w-4 h-4' />
-                                            <h1>Volkswagen</h1>
-                                            <p className='text-[10px] text-[#90A3BF]'>(56)</p>
-                                        </div>
-                                        <div className='flex items-center mt-2 space-x-2 text-md pl-3 hover:bg-[#0B5CFF] p-1 hover:text-white rounded-lg cursor-pointer'>
-                                            <input type="checkbox" className='border-[#787878] w-4 h-4' />
-                                            <h1>BMW</h1>
-                                            <p className='text-[10px] text-[#90A3BF]'>(80)</p>
-                                        </div>
-                                        <div className='flex items-center mt-2 space-x-2 text-md pl-3 hover:bg-[#0B5CFF] p-1 hover:text-white rounded-lg cursor-pointer'>
-                                            <input type="checkbox" className='border-[#787878] w-4 h-4' />
-                                            <h1>Chevrolet</h1>
-                                            <p className='text-[10px] text-[#90A3BF]'>(13)</p>
-                                        </div>
-                                        <div className='flex items-center mt-2 space-x-2 text-md pl-3 hover:bg-[#0B5CFF] p-1 hover:text-white rounded-lg cursor-pointer'>
-                                            <input type="checkbox" className='border-[#787878] w-4 h-4' />
-                                            <h1>Mercedes-Benz</h1>
-                                            <p className='text-[10px] text-[#90A3BF]'>(6)</p>
-                                        </div>
-                                        <div className='flex items-center mt-2 space-x-2 text-md pl-3 hover:bg-[#0B5CFF] p-1 hover:text-white rounded-lg cursor-pointer'>
-                                            <input type="checkbox" className='border-[#787878] w-4 h-4' />
-                                            <h1>Jeep</h1>
-                                            <p className='text-[10px] text-[#90A3BF]'>(32)</p>
-                                        </div>
-                                        <div className='flex items-center mt-2 space-x-2 text-md pl-3 hover:bg-[#0B5CFF] p-1 hover:text-white rounded-lg cursor-pointer'>
-                                            <input type="checkbox" className='border-[#787878] w-4 h-4' />
-                                            <h1>Porche</h1>
-                                            <p className='text-[10px] text-[#90A3BF]'>(18)</p>
-                                        </div>
-                                    </div>
-                                )}
+                                {/* first drop down */}
+                                <DropdownWithSearch Data={makePorch} title="Make" subTitle="Porch" />
 
-                                {/* <div className='bg-[#F6F7F9] my-3 rounded-xl p-3 flex justify-between items-center  '>
-                                    <div>
-                                        <p className='text-xs text-black'>Model</p>
-                                        <h1 className='text-md text-[#90A3BF] '>Gt3 RS</h1>
-                                    </div>
-                                    <MdKeyboardArrowDown className='text-2xl' />
-                                </div>
+                                {/* second dropdown */}
+
+                                <DropdownWithSearch Data={model} title="Model" subTitle="GT3RS"/>
+
+                               
                                 <div className='bg-[#F6F7F9] rounded-xl p-3 flex justify-between items-center  '>
                                     <div>
                                         <p className='text-xs text-black'>Zip Code</p>
-                                        <h1 className='text-md text-[#90A3BF] '>796854</h1>
+                                        <input type="number" placeholder='796854' className='text-md text-[#90A3BF] outline-none' />
                                     </div>
                                 </div>
-                                <div className='flex items-center mt-10 gap-5'>
+                                {/* <div className='flex items-center mt-10 gap-5'>
                                     <div className='  bg-[#F6F7F9] w-full p-3 rounded-xl'>
                                         <form class="max-w-sm mx-auto ">
                                             <label for="countries" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Min Price</label>
@@ -147,10 +88,10 @@ const UsedCar = () => {
                                                 <option value="DE" className='text-sm text-white mt-3'>95,000</option></select>
                                         </form>
                                     </div>
-                                </div> */}
+                                </div>  */}
+
                             </>
                         )}
-
                     </div>
                     {/* styles */}
                     {/* <div className='rounded-xl  border p-3 mt-5'>
