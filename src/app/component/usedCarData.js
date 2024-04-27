@@ -25,7 +25,7 @@ const UsedCars = ({ Data }) => {
 
     };
     return (
-        <div className=' mx-auto md:mt-14 mt-5 '>
+        <div className=' mx-auto md:mt-14 mt-5 z-40 '>
             <ToastContainer />
 
             <div className='mt-14 grid  xl:grid-cols-3  justify-center  md:grid-cols-2 gris-cols-1 gap-5'>
