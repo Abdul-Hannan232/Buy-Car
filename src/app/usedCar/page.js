@@ -16,7 +16,7 @@ import PopularCars from '../component/usedCarData.js';
 const UsedCar = () => {
     return (
         <div className='mt-40 h-screen w-[90%] mx-auto  '>
-            <div className=' flex justify-around gap-10'>
+            <div className=' lg:flex justify-around gap-10'>
                 <div className='bg-white mt-20 p-3 w-80 rounded-xl'>
                     <button className='bg-[#0B5CFF] w-72 p-4 text-white rounded-2xl flex items-center justify-between'>
                         <div className='flex items-center gap-2'>
@@ -41,7 +41,7 @@ const UsedCar = () => {
                     <div className='w-full flex items-end justify-between'>
                         <div>
                             <p className='text-[#0B5CFF]'>12,530 Results</p>
-                            <h1 className='text-4xl font-bold text-black'>Explore Used Cars For Sale</h1>
+                            <h1 className='xl:text-4xl text-3xl font-bold text-black'>Explore Used Cars For Sale</h1>
                         </div>
                         <div className='bg-[#0B5CFF] text-white rounded-xl p-3 w-52 h-10 flex items-center justify-center'>
                             <RxCrossCircled />
