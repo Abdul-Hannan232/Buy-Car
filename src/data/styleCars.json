@@ -1,0 +1,26 @@
+[
+    {
+        "name": "All",
+        "count": "(2,367)"
+    },
+    {
+        "name": "Family Car",
+        "count": "(989)"
+    },
+    {
+        "name": "Commercial",
+        "count": "(475)"
+    },
+    {
+        "name": "Luxury",
+        "count": "(281)"
+    },
+    {
+        "name": "Modified",
+        "count": "(56)"
+    },
+    {
+        "name": "Exotic",
+        "count": "(80)"
+    }
+]
