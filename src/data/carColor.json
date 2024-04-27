@@ -1,42 +1,52 @@
 [
     {
         "name": "All",
-        "count": "(2,367)"
+        "count": "(2,367)",
+        "colorCode":"#FFFFFF"
     },
     {
         "name": "Black",
-        "count": "(989)"
+        "count": "(989)",
+        "colorCode":"#000000"
     },
     {
         "name": "White",
-        "count": "(475)"
+        "count": "(475)",
+        "colorCode":"#FFFFFF"
     },
     {
         "name": "Red",
-        "count": "(281)"
+        "count": "(281)",
+        "colorCode":"#ED3F3F"
     },
     {
         "name": "Blue",
-        "count": "(56)"
+        "count": "(56)",
+        "colorCode":"#0B5CFF"
     },
     {
         "name": "Purple",
-        "count": "(80)"
+        "count": "(80)",
+        "colorCode":"#9E00FF"
     },
     {
         "name": "Yellow",
-        "count": "(13)"
+        "count": "(13)",
+        "colorCode":"#FBAD39"
     },
     {
         "name": "Green",
-        "count": "(6)"
+        "count": "(6)",
+        "colorCode":"#24FF00"
     },
     {
         "name": "Orange",
-        "count": "(32)"
+        "count": "(32)",
+        "colorCode":"#FF6B00"
     },
     {
         "name": "Pink",
-        "count": "(18)"
+        "count": "(18)",
+        "colorCode":"#FF005C"
     }
 ]

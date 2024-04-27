@@ -20,7 +20,6 @@ const DropdownWithSearch = ({ Data, title, subTitle }) => {
                 <MdKeyboardArrowDown className='text-2xl' />
             </div>
             {porche && (
-
                 <div className=' absolute left-0 z-40  bg-white right-0  p-3'>
                     <div className='w-full relative mb-3'>
                         <CiSearch className='absolute left-3  top-2 text-[#787878] md:text-md text-xl ' />
@@ -29,6 +28,9 @@ const DropdownWithSearch = ({ Data, title, subTitle }) => {
                     {Data.map((item) => (
                         <div className='flex items-center  space-x-2 text-md pl-3 hover:bg-[#0B5CFF] p-1 hover:text-white rounded-lg cursor-pointer'>
                             <input type="checkbox" className='border-[#787878] w-4 h-4' />
+                            {item.colorCode ? (
+                                <div className={`w-5 h-5 rounded-md bg-[${item.colorCode}]`} ></div>
+                            ) : null}
                             <h1>{item.name}</h1>
                             <p className='text-[10px] text-[#90A3BF]'>{item.count}</p>
                         </div>
