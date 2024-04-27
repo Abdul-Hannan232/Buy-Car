@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Best Match"
+        
+    },
+    {
+        "name": "Lowest Price"
+        
+    },
+    {
+        "name": "Highest Price"
+        
+    },
+    {
+        "name": "Lowest Mileage"
+        
+    },
+    {
+        "name": "Highest Mileage"
+        
+    },
+    {
+        "name": "Nearest Location"
+        
+    },
+    {
+        "name": "Newest Year"
+        
+    },
+    {
+        "name": "Oldest Year"
+    
+    },
+    {
+        "name": "Newest Listing First"
+        
+    },
+    {
+        "name": "Oldest Listing First"
+        
+    }
+]

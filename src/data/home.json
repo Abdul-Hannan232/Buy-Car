@@ -81,5 +81,15 @@
         "amount":"$21,000",
         "building":"MG Dealership",
         "bookmark":true
+    },
+    {
+        "id":8,
+        "name":"MG ZX Excite",
+        "quality":"Hatchback",
+        "country":"Shanghai, China",
+        "image":"/car4.png",
+        "amount":"$21,000",
+        "building":"MG Dealership",
+        "bookmark":true
     }
 ]

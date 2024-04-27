@@ -29,7 +29,7 @@ const Navbar = () => {
             <div className='xl:block hidden'>
                 <ul className='text-md font-medium flex items-center xl:space-x-10 space-x-4  ' >
                     <li className='hover:text-[#0B5CFF]  transition ease-in-out delay-90 hover:-translate-y-1 hover:scale-60  duration-500 '><Link href="/">Home</Link></li>
-                    <li className='hover:text-[#0B5CFF]  transition ease-in-out delay-90 hover:-translate-y-1 hover:scale-60  duration-500 '><Link href="#">Used Cars</Link></li>
+                    <li className='hover:text-[#0B5CFF]  transition ease-in-out delay-90 hover:-translate-y-1 hover:scale-60  duration-500 '><Link href="/usedCar">Used Cars</Link></li>
                     <li className='hover:text-[#0B5CFF]  transition ease-in-out delay-90 hover:-translate-y-1 hover:scale-60  duration-500 '><Link href="#">Car Payment Calculator</Link></li>
                 </ul>
             </div>
