@@ -12,7 +12,7 @@ import { CiSearch } from "react-icons/ci";
 import HighestPrice from '../component/highestPrice';
 import PriceData from "../../data/highestPrice.json"
 import HomeData from "../../data/home.json"
-import PopularCars from '../component/usedCarData.js';
+import UsedCars from '../component/usedCarData.js';
 const UsedCar = () => {
     const [filter, setFilter] = useState(false)
     const filterDrop = () => {
@@ -77,8 +77,8 @@ const UsedCar = () => {
                             </div>
                         )}
                     </div>
-                    <PopularCars Data={HomeData} />
-                    <PopularCars Data={HomeData} />
+                    <UsedCars Data={HomeData} />
+                    <UsedCars Data={HomeData} />
 
                 </div>
 

@@ -28,7 +28,7 @@ const Footer = () => {
                 <ul className='text-[#90A3BF] md:text-md lg:mt-0 mt-10 text-sm md:space-y-4 space-y-2'>
                     <li> <Link href="#" className='hover:text-[#0B5CFF] cursor-pointer'>Buy Used Cars</Link></li>
                     <li>  <Link href="#" className='hover:text-[#0B5CFF] cursor-pointer'>Car Payment Calculator</Link></li>
-                    <li> <Link href="#" className='hover:text-[#0B5CFF] cursor-pointer'>Dealers</Link></li>
+                    <li> <Link href="/dealership" className='hover:text-[#0B5CFF] cursor-pointer'>Dealers</Link></li>
                     <li> <Link href="#" className='hover:text-[#0B5CFF] cursor-pointer'>Become a member</Link></li>
                     <li> <Link href="#" className='hover:text-[#0B5CFF] cursor-pointer'>Dealers</Link></li>
                     <li>   <Link href="#" className='hover:text-[#0B5CFF] cursor-pointer'>Become a member</Link></li>
