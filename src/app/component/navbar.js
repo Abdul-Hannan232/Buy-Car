@@ -24,9 +24,12 @@ const Navbar = () => {
     return (
         <div className='bg-white shadow-xl fixed left-0 right-0 top-0 z-40 '>
             <div className='flex relative bg-white  items-center xl:justify-around  justify-between  w-full mx-auto xl:p-3  px-2 py-3'>
-                <div className='xl:border-r-[#CACACA] xl:pr-5 xl:border-2 border-transparent'>
+               <Link href="/">
+               <div className='xl:border-r-[#CACACA] xl:pr-5 xl:border-2 border-transparent'>
                     <Image src="/logo.png" alt="Logo" width={90} height={26} className='xl:w-48  w-32 ' />
                 </div>
+                </Link> 
+               
                 <div className='xl:block hidden'>
                     <ul className='text-md font-medium flex items-center xl:space-x-10 space-x-4  ' >
                         <li className='hover:text-[#0B5CFF]  transition ease-in-out delay-90 hover:-translate-y-1 hover:scale-60  duration-500 '><Link href="/">Home</Link></li>
