@@ -12,7 +12,7 @@ import { CiSearch } from "react-icons/ci";
 import HighestPrice from '../component/highestPrice';
 import PriceData from "../../data/highestPrice.json"
 import HomeData from "../../data/home.json"
-import UsedCars from '../component/usedCarData.js';
+import PopularCars from '../component/popularCars';
 const UsedCar = () => {
     const [filter, setFilter] = useState(false)
     const filterDrop = () => {
@@ -68,7 +68,7 @@ const UsedCar = () => {
                             <MdKeyboardArrowDown className='text-3xl' />
                         </button>
                         {filter && (
-                            <div className='bg-white z-40 w-full p-3 rounded-xl'>
+                            <div className='bg-white absolute z-80 left-0 right-0  w-full p-3 rounded-xl'>
                                 <Fundamentals />
                                 <Style />
                                 <Performence />
@@ -77,7 +77,7 @@ const UsedCar = () => {
                             </div>
                         )}
                     </div>
-                    <UsedCars Data={HomeData} />
+                    <PopularCars Data={HomeData} grid="3" />
 
                 </div>
 

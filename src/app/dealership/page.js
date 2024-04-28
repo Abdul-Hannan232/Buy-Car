@@ -4,14 +4,15 @@ import { IoMdStar } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
 import { PiMedalFill } from "react-icons/pi";
 import { IoIosCall } from "react-icons/io";
-import { MdKeyboardArrowDown,MdKeyboardArrowUp } from "react-icons/md";
+import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 import Image from 'next/image';
-import UsedCars from '../component/usedCarData';
+import popularCars from '../component/popularCars';
 import HomeData from "../../data/home.json"
 import Reviews from "../../data/reviews.json"
+import renderStars from '@/utils/rating';
 const Dealership = () => {
     const [showAll, setShowAll] = useState(false);
-
+    console.log(renderStars(3), "renderStars")
     const toggleShowAll = () => {
         setShowAll(!showAll);
     };
@@ -47,7 +48,7 @@ const Dealership = () => {
                 <p className='text-[#0B5CFF] lg:text-sm text-xs font-bold'>Sunshine Honda</p>
             </div>
             <div className='lg:w-[70%] w-full mx-auto'>
-                <UsedCars Data={HomeData} />
+                <popularCars Data={HomeData} grid="3" />
             </div>
             <div className='flex items-center justify-center gap-2 bg-white rounded-xl p-3 lg:w-[67%] w-full mx-auto mt-20'>
                 <p className='text-black lg:text-sm text-xs font-bold'>All Reviews of  </p>
@@ -83,11 +84,7 @@ const Dealership = () => {
                                         <h1 className='text-lg font-bold'>{item.userName}</h1>
                                         <div className='flex items-center'>
                                             <p className='2xl:text-md text-xs text-[#90A3BF]'>4.0</p>
-                                            <IoMdStar className='text-[#FBAD39] text-md' />
-                                            <IoMdStar className='text-[#FBAD39] text-md' />
-                                            <IoMdStar className='text-[#FBAD39] text-md' />
-                                            <IoMdStar className='text-[#FBAD39] text-md' />
-                                            <IoMdStar className='focus:text-[#FBAD39] text-md text-[#90A3BF]' />
+                                            {renderStars(item.rating)}
                                         </div>
                                     </div>
                                 </div>

@@ -9,8 +9,8 @@ import { PiMedalFill } from "react-icons/pi";
 import { CiHeart } from "react-icons/ci";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
-const PopularCars = ({ Data }) => {
+import renderStars from '@/utils/rating';
+const PopularCars = ({ Data ,grid}) => {
 
     const [clickedItems, setClickedItems] = useState([]);
     const handleClick = (index) => {
@@ -25,10 +25,10 @@ const PopularCars = ({ Data }) => {
 
     };
     return (
-        <div className=' mx-auto md:mt-14 mt-5 '>
+        <div className=' mx-auto md:mt-14 mt-5 z-40 '>
             <ToastContainer />
 
-            <div className='mt-14 grid xl:grid-cols-4 lg:grid-cols-3 justify-center  md:grid-cols-2 gris-cols-1 gap-5'>
+            <div className={`mt-14 grid xl:grid-cols-${grid} lg:grid-cols-3 justify-center  md:grid-cols-2 gris-cols-1 gap-5`}>
                 {Data.map((item, index) => (
                     <div key={index} className='2xl:w-[340px] w-[260px] mb-20 rounded-3xl 2xl:p-10 p-6 bg-white 2xl:h-[450px] h-[380px] relative shadow-xl'>
 
@@ -42,16 +42,12 @@ const PopularCars = ({ Data }) => {
                                 onClick={() => handleClick(index)}
                             />
                         </div><br />
-                        <Image src={item.image} alt="car" width={180} height={56} className='w-44 h-20' />
+                        <Image src={item.image ? item.image[0] : "/car1.png"} alt="car" width={180} height={56} className='w-44 h-20' />
                         <h1 className='2xl:text-4xl text-2xl font-bold text-[#0B5CFF] 2xl:my-7 my-4'>{item.amount}</h1>
                         <div className='flex items-center space-x-1'>
                             <PiMedalFill className='2xl:text-md text-sm  text-[#90A3BF] text-3xl mr-2' />
-                            <p className='2xl:text-sm text-xs text-[#90A3BF] '>4.0</p>
-                            <IoMdStar className=' text-[#FBAD39] 2xl:text-sm text-xs' />
-                            <IoMdStar className=' text-[#FBAD39] 2xl:text-sm text-xs' />
-                            <IoMdStar className=' text-[#FBAD39] 2xl:text-sm text-xs' />
-                            <IoMdStar className=' text-[#FBAD39] 2xl:text-sm text-xs' />
-                            <IoMdStar className=' focus:text-[#FBAD39] text-md text-[#90A3BF]' />
+                            <p className='2xl:text-sm text-xs text-[#90A3BF] '>{item.rating}.0</p>
+                          {renderStars(item.rating)}
                             <p className='2xl:text-xs text-[10px] text-[#90A3BF] font-bold'>(32 reviews)</p>
                         </div>
                         <div className='flex items-center my-3 gap-2 space-x-1'>
