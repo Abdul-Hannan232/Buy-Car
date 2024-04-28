@@ -21,8 +21,8 @@ const UsedCar = () => {
     return (
         <div className='lg:mt-40 mt-24 h-screen w-[90%] mx-auto  '>
             <div className=' lg:flex justify-around gap-10'>
-                <div className='bg-white md:block hidden mt-20 w-80 p-3 h-[90px] rounded-xl'>
-                    <button onClick={filterDrop} className='bg-[#0B5CFF] w-72 p-4 text-white rounded-2xl flex items-center justify-between'>
+                <div className='bg-white md:block hidden mt-20   h-[90px] rounded-xl'>
+                    <button onClick={filterDrop} className='bg-[#0B5CFF] w-72 p-4 m-4 text-white rounded-2xl flex items-center justify-between'>
                         <div className='flex items-center gap-2'>
                             <TbFilterSearch className='text-3xl' />
                             <h1 className='text-xl'>Filters</h1>
@@ -30,7 +30,7 @@ const UsedCar = () => {
                         <MdKeyboardArrowDown className='text-3xl' />
                     </button>
                     {filter && (
-                        <div className='bg-white w-full p-3 rounded-xl'>
+                        <div className='bg-white w-80  p-3 -mt-4 rounded-xl'>
                             <Fundamentals />
                             <Style />
                             <Performence />
@@ -59,7 +59,7 @@ const UsedCar = () => {
                         </div>
                         <HighestPrice Data={PriceData} title={"Sort by"} subTitle={"Highest Price"} />
                     </div>
-                    <div className='bg-white   mt-3 lg:w-80 p-3 h-[90px] rounded-xl'>
+                    <div className='bg-white  md:hidden block mt-3 lg:w-80 p-3 h-[90px] rounded-xl'>
                         <button onClick={filterDrop} className='bg-[#0B5CFF] z-80 lg:w-72 p-4 w-full text-white rounded-2xl flex items-center justify-between'>
                             <div className='flex items-center gap-2'>
                                 <TbFilterSearch className='text-2xl' />
