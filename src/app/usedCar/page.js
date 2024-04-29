@@ -77,7 +77,7 @@ const UsedCar = () => {
                             </div>
                         )}
                     </div>
-                    <PopularCars Data={HomeData} grid="3" color={"#D3E2FF"} textColor={"#0B5CFF"} borderRadius={"2xl"}/>
+                    <PopularCars Data={HomeData} grid={3} color={"#D3E2FF"} textColor={"#0B5CFF"} borderRadius={"2xl"}/>
 
                 </div>
 

@@ -24,18 +24,18 @@ const Carousel = () => {
 
     return (
         <div className="flex flex-col items-center ">
-            <div className='flex items-center gap-4 relative'>
-                <button className=" text-white bg-white -mr-16 z-40 absoulte bg-opacity-50 p-3 rounded-xl" onClick={handlePrevious}>
-                    <FaLessThan />
+            <div className='flex items-center gap-4 w-[95%] mx-auto  relative'>
+                <button className=" text-white bg-white -mr-16  z-40 absoulte bg-opacity-50 lg:p-3 p-1  lg:rounded-xl rounded-md" onClick={handlePrevious}>
+                    <FaLessThan className='text-sm lg:text-xl'/>
                 </button>
-                <div className='w-[680px] h-80'>
-                    <img src={images[selectedImageIndex]} alt="Selected" className="mb-4 w-full h-96" />
-
-                </div>                <button className=" text-white bg-white -ml-16 z-40 absoulte bg-opacity-50 p-3 rounded-xl" onClick={handleNext}>
-                    <FaGreaterThan />
+                <div className='md:w-[680px] lg:mx-0 mx-5 w-full mx-auto  md:h-80'>
+                    <img src={images[selectedImageIndex]} alt="Selected" className="mb-4 w-full rounded-xl md:h-96" />
+                </div>
+                <button className=" text-white bg-white -ml-16 z-40 absoulte bg-opacity-50 lg:p-3 p-1 lg:rounded-xl rounded-md" onClick={handleNext}>
+                    <FaGreaterThan className='text-sm lg:text-xl'/>
                 </button>
             </div>
-            <div className="flex items-center mt-20">
+            <div className="flex items-center md:mt-20 ">
 
                 <div className="flex ">
                     {images.map((image, index) => (
@@ -43,7 +43,7 @@ const Carousel = () => {
                             key={index}
                             src={image}
                             alt={`Image ${index}`}
-                            className={`w-40 h-20  ml-2 rounded-xl object-cover cursor-pointer ${index === selectedImageIndex ? 'border-2 border-blue-500' : ''
+                            className={`lg:w-40 md:w-20 w-14 lg:h-20 md:h-14 h-12  ml-2 lg:rounded-xl rounded-md object-cover cursor-pointer ${index === selectedImageIndex ? 'border-2 border-blue-500' : ''
                                 }`}
                             onClick={() => setSelectedImageIndex(index)}
                         />

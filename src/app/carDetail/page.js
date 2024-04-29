@@ -7,6 +7,8 @@ import { PiMedalFill } from "react-icons/pi";
 import { IoIosCall } from "react-icons/io";
 import { RxExternalLink } from "react-icons/rx";
 import CarDetail from "../../data/carDetail.json"
+import Reviews from "../component/reviews.js"
+import renderStars from '@/utils/rating';
 
 export default function Home() {
     const style = [
@@ -60,44 +62,46 @@ export default function Home() {
     ]
     return (
         <>
-            <div className='flex  mt-32 gap-10 w-[85%] mx-auto '>
-                <main className="container mx-auto w-[60%] ">
+            <div className='lg:flex  mt-32 gap-10 lg:w-[85%] mx-auto '>
+                <main className="container mx-auto lg:w-[60%] ">
                     <Carousel />
-                    <div className='flex items-end gap-5 mt-5 '>
-                        <div className='w-full'>
-                            <h1 className='text-2xl font-bold text-[#313131] '>Honda Civic</h1>
-                            <h1 className='text-5xl font-bold text-[#0B5CFF]'> $20,000</h1>
-                            <div className='mt-10 grid grid-cols-4 justify-between px-2 rounded-xl bg-white  py-3'>
+                    <div className='lg:flex items-end gap-5 mt-5 lg:mx-0 mx-5 '>
+                        <div className='w-full '>
+                            <h1 className='lg:text-2xl text-lg font-bold text-[#313131] '>Honda Civic</h1>
+                            <h1 className='lg:text-5xl text-3xl font-bold text-[#0B5CFF]'> $20,000</h1>
+                            <div className='lg:mt-10 mt-5 grid grid-cols-4 justify-between px-2 rounded-xl bg-white  py-3'>
                                 <div className='text-center'>
-                                    <Image src="/calendar.png" alt="image1" width={24} height={24} className='mx-auto' />
-                                    <h1 className='text-[#90A3BF] text-sm'>2023</h1>
+                                    <Image src="/calendar.png" alt="image1" width={24} height={24} className='mx-lg:w-[24px] lg:h-[24px] w-5 h-5 mx-auto' />
+                                    <h1 className='text-[#90A3BF] lg:text-sm text-xs'>2023</h1>
                                 </div>
                                 <div className='text-center'>
-                                    <Image src="/speedometer.png" alt="image1" width={24} height={24} className='mx-auto' />
-                                    <h1 className='text-[#90A3BF] text-sm'>25K miles</h1>
+                                    <Image src="/speedometer.png" alt="image1" width={24} height={24} className='lg:w-[24px] lg:h-[24px] w-5 h-5 mx-auto' />
+                                    <h1 className='text-[#90A3BF] lg:text-sm text-xs'>25K miles</h1>
                                 </div>
                                 <div className='text-center'>
-                                    <Image src="/gas-station.png" alt="image1" width={24} height={24} className='mx-auto' />
-                                    <h1 className='text-[#90A3BF] text-sm'>Hybrid</h1>
+                                    <Image src="/gas-station.png" alt="image1" width={24} height={24} className='lg:w-[24px] lg:h-[24px] w-5 h-5 mx-auto' />
+                                    <h1 className='text-[#90A3BF] lg:text-sm text-xs'>Hybrid</h1>
                                 </div>
                                 <div className='text-center'>
-                                    <Image src="/Group 110.png" alt="image1" width={24} height={24} className='mx-auto' />
-                                    <h1 className='text-[#90A3BF] text-sm'>Automatic</h1>
+                                    <Image src="/Group 110.png" alt="image1" width={24} height={24} className='mxlg:w-[24px] lg:h-[24px] w-5 h-5 mx-auto' />
+                                    <h1 className='text-[#90A3BF] lg:text-sm text-xs'>Automatic</h1>
                                 </div>
                             </div>
                         </div>
                         <div>
-                            <div className=' mt- bg-white w-56 rounded-xl p-3'>
-                                <div className='flex  gap-3'>
-                                    <Image src="/redLogo.png" alt="image" width={44} height={44} className='' />
-                                    <div>
-                                        <h1 className=' text-sm text-[#1A202C]'>DealerShip</h1>
-                                        <h1 className='text-[#90A3BF]  text-sm font-medium'>Sunshine Honda</h1>
+                            <div className='lg:mt-0 mt-5 bg-white lg:w-56 rounded-xl p-5'>
+                                <div className='flex justify-between  gap-3'>
+                                    <div className='flex gap-3'>
+                                        <Image src="/redLogo.png" alt="image" width={44} height={44} className='' />
+                                        <div>
+                                            <h1 className=' text-sm text-[#1A202C]'>DealerShip</h1>
+                                            <h1 className='text-[#90A3BF]  text-sm font-medium'>Sunshine Honda</h1>
+                                        </div>
                                     </div>
                                     <RxExternalLink className='text-[#90A3BF] text-xl ' />
 
                                 </div>
-                                <div className='flex items-center lg:my-2 my-1 gap-2 space-x-1'>
+                                <div className='flex lg:mt-0 mt-5 items-center lg:my-2 my-1 gap-2 space-x-1'>
                                     <IoIosCall className='2xl:text-md text-sm  text-[#90A3BF] text-3xl' />
                                     <p className=' text-[9px] text-[#90A3BF] '>123 - 456 - 789</p>
                                 </div>
@@ -119,7 +123,7 @@ export default function Home() {
                         </div>
                     </div>
                 </main>
-                <div className='w-full  bg-white p-3 rounded-xl'>
+                <div className='lg:w-full w-[90%] lg:mx-0 mx-auto lg:mt-0 mt-10  bg-white p-3 rounded-xl'>
                     <h1 className='text-2xl text-[#313131] font-bold text-center'>Contact Dealer</h1>
                     <hr className='border my-3' />
                     <div className='relative  w-full'>
@@ -144,67 +148,101 @@ export default function Home() {
                     </div>
                     <button className='bg-[#0B5CFF] text-white text-center p-3 w-full rounded-xl mt-3 text-xl'>Submit</button>
                 </div>
+
             </div>
-            <div className='bg-white w-[85%] mx-auto px-24 pt-24 pb-10 mt-20 rounded-xl'>
+            <div className='bg-white lg:w-[85%] lg:mx-auto mx-5 lg:px-24 px-5 lg:pt-24 pt-5 pb-10 mt-20 rounded-xl'>
                 <div className='flex justify-center'>
-                    <button className='text-lg font-bold flex justify-center text-center p-3 rounded-xl text-[#0B5CFF] w-48  bg-[#D3E2FF]'>CAR DETAILS</button>
+                    <button
+                        className='text-lg font-bold flex justify-center text-center p-3 rounded-xl text-[#0B5CFF] w-48  bg-[#D3E2FF]'>CAR
+                        DETAILS</button>
                 </div>
-                <div className='bg-[#F6F7F9] p-2 rounded-xl text-lg w-full font-bold px-8 text-[#313131] mt-5'>Fundamentals</div>
+                <div className='bg-[#F6F7F9] p-2 rounded-xl lg:text-lg text-sm w-full font-bold lg:pl-8 pl-4 text-[#313131] mt-5'>Fundamentals</div>
                 {/* fundamentals */}
                 <div className='  '>
                     {CarDetail.map((item) => (
                         <>
-                            <div className='mb-4 grid grid-cols-2 w-[600px] ml-8'>
-                                <p className='text-lg mt-5  text-[#90A3BF]'>{item.key}</p>
-                                <p className='text-lg  mt-5  text-[#90A3BF] text-start font-light'>{item.value}</p>
+                            <div className='mb-4 grid grid-cols-2 lg:w-[600px] lg:ml-8 lg:ml-4 ml-2'>
+                                <p className='lg:text-lg text-xs mt-5  text-[#90A3BF]'>{item.key}</p>
+                                <p className='lg:text-lg text-xs  mt-5  text-[#90A3BF] text-start font-light'>{item.value}</p>
                             </div>
                             <hr />
                         </>
                     ))}
                 </div>
                 {/* style */}
-                <div className='bg-[#F6F7F9] p-2 rounded-xl text-lg w-full font-bold px-8 text-[#313131] mt-14'>Style</div>
+                <div className='bg-[#F6F7F9] p-2 rounded-xl lg:text-lg text-sm w-full font-bold lg:pl-8 pl-4 text-[#313131] mt-14'>Style</div>
 
                 <div className='  '>
                     {style.map((item) => (
                         <>
-                            <div className='mb-4 grid grid-cols-2 w-[600px] ml-8'>
-                                <p className='text-lg mt-5  text-[#90A3BF]'>{item.key}</p>
-                                <p className='text-lg  mt-5  text-[#90A3BF] text-start font-light'>{item.value}</p>
+                            <div className='mb-4 grid grid-cols-2 lg:w-[600px] lg:ml-8 lg:ml-4 ml-2'>
+                                <p className='lg:text-lg text-xs mt-5  text-[#90A3BF]'>{item.key}</p>
+                                <p className='lg:text-lg text-xs  mt-5  text-[#90A3BF] text-start font-light'>{item.value}</p>
                             </div>
                             <hr />
                         </>
                     ))}
                 </div>
                 {/* Performance */}
-                <div className='bg-[#F6F7F9] p-2 rounded-xl text-lg w-full font-bold px-8 text-[#313131] mt-14'>Performance</div>
+                <div className='bg-[#F6F7F9] p-2 rounded-xl lg:text-lg text-sm w-full font-bold lg:pl-8 pl-4 text-[#313131] mt-14'>Performance</div>
 
                 <div className='  '>
                     {performence.map((item) => (
                         <>
-                            <div className='mb-4 grid grid-cols-2 w-[600px] ml-8'>
-                                <p className='text-lg mt-5  text-[#90A3BF]'>{item.key}</p>
-                                <p className='text-lg  mt-5  text-[#90A3BF] text-start font-light'>{item.value}</p>
+                            <div className='mb-4 grid grid-cols-2 lg:w-[600px] lg:ml-8 lg:ml-4 ml-2'>
+                                <p className='lg:text-lg text-xs mt-5  text-[#90A3BF]'>{item.key}</p>
+                                <p className='lg:text-lg text-xs  mt-5  text-[#90A3BF] text-start font-light'>{item.value}</p>
                             </div>
                             <hr />
                         </>
                     ))}
                 </div>
                 {/* Performance */}
-                <div className='bg-[#F6F7F9] p-2 rounded-xl text-lg w-full font-bold px-8 text-[#313131] mt-14'>Features</div>
+                <div className='bg-[#F6F7F9] p-2 rounded-xl lg:text-lg text-sm w-full font-bold lg:pl-8 pl-4 text-[#313131] mt-14'>Features</div>
 
                 <div className='  '>
                     {features.map((item) => (
                         <>
-                            <div className='mb-4 grid grid-cols-6  ml-8'>
-                                <p className='text-lg mt-5  col-span-2 text-[#90A3BF]'>{item.key}</p>
-                                <p className='text-lg  mt-5 col-span-4 text-[#90A3BF] text-start font-light'>{item.value}</p>
+                            <div className='mb-4 grid lg:grid-cols-6 grid-cols-2  lg:ml-8 lg:ml-4 ml-2'>
+                                <p className='lg:text-lg text-xs mt-5  lg:col-span-2 text-[#90A3BF]'>{item.key}</p>
+                                <p className='lg:text-lg text-xs mt-5 lg:col-span-4 text-[#90A3BF] text-start font-light'>{item.value}</p>
                             </div>
                             <hr />
                         </>
                     ))}
                 </div>
             </div>
+            <div className='flex items-center mt-5 bg-white mx-5 rounded-xl p-3 justify-between lg:w-[85%] lg:mx-auto'>
+                <div className=' '>
+                    <div className='flex gap-2 items-center '>
+                        <Image src="/redLogo.png" alt="image" width={44} height={44} className='' />
+                        <div>
+                            <h1 className=' flex items-center gap-1 font-bold lg:text-sm text-[9px] text-[#1A202C]'>DealerShip
+                                <RxExternalLink className='text-[#90A3BF] lg:text-lg text-sm ' />
+                            </h1>
+                            <h1 className='text-[#90A3BF]  lg:text-sm text-[9px] font-medium'>Sunshine Honda</h1>
+                        </div>
+
+                    </div>
+                </div>
+                <div className='flex  items-center space-x-1'>
+                    <PiMedalFill className='lg:text-md text-sm text-[#90A3BF] text-2xl ' />
+                    <p className='lg:text-md text-[7px] text-[#90A3BF] '>4.0</p>
+                    <IoMdStar className=' text-[#FBAD39] lg:text-md text-[7px]'/>
+                    <IoMdStar className=' text-[#FBAD39] lg:text-md text-[7px]'/>
+                    <IoMdStar className=' text-[#FBAD39] lg:text-md text-[7px]'/>
+                    <IoMdStar className=' text-[#FBAD39] lg:text-md text-[7px]'/>
+                    <IoMdStar className=' focus:text-[#FBAD39]  lg:text-md text-[7px] text-[#90A3BF]' />
+                    <p className='lg:text-md text-[7px] text-[#90A3BF]'>(32 reviews)</p>
+                </div>
+            </div>
+            <div>
+                <Reviews grid="3" width="85" />
+            </div>
+            {/* <div className='flex justify-center mb-40'>
+                <button className='bg-[#0B5CFF] w-96 text-xl font-medium rounded-xl p-5  mx-auto text-center text-white'>More Cars
+                    from this Dealership</button>
+            </div> */}
         </>
     );
 }
