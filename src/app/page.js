@@ -19,8 +19,8 @@ const Home = () => {
         <h1 className='md:text-4xl text-2xl font-medium text-[#90A3BF]'>Popular Cars</h1>
         <button className='text-[#0B5CFF] bg-[#0B5CFF] bg-opacity-30 md:rounded-xl rounded-md cursor-pointer md:p-3 p-1 md:w-24 w-20 font-medium md:text-md text-sm text-center'>View All</button>
       </div>
-        <PopularCars Data={HomeData} grid="4"/>
-        <button className='md:w-60 w-40 md:p-5 p-3 rounded-2xl hover:bg-opacity-90 text-center text-md text-white bg-[#0B5CFF] flex justify-center mx-auto mt-10 mb-32'>Show more cars</button>
+        <PopularCars Data={HomeData} grid="4" color={"#0B5CFF"} textColor={"#FFFFFF"} borderRadius={"full"}/>
+        <button className=' buttonBackground md:w-60 w-40 md:p-5 p-3 rounded-full  text-center text-md text-white  flex justify-center mx-auto mt-10 mb-32'>Show more cars</button>
       </div>
     </>
   )

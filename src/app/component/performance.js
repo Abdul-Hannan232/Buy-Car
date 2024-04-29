@@ -17,7 +17,7 @@ const Performence = () => {
         <div>
             <div className='rounded-xl relative  border p-3 mt-5 bg-white'>
                 <div className=' flex justify-between items-center  cursor-pointer' onClick={fundamentalsDropdown}>
-                    <h1 className='text-xl text-black font-medium'>Performance</h1>
+                    <h1 className='text-xl text-[#1A202C] font-medium'>Performance</h1>
                     {fundDrop ? <MdOutlineKeyboardArrowUp className='text-2xl' /> : <MdKeyboardArrowDown className='text-2xl' />}
                 </div>
                 {fundDrop && (

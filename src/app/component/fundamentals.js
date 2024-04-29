@@ -17,7 +17,7 @@ const Fundamentals = () => {
     <div>
       <div className='rounded-xl relative  border p-3 mt-5 bg-white'>
         <div className=' flex justify-between items-center  cursor-pointer' onClick={fundamentalsDropdown}>
-          <h1 className='text-xl text-black font-medium'>Fundamentals</h1>
+          <h1 className='text-xl text-[#1A202C] font-medium'>Fundamentals</h1>
           {fundDrop ? <MdOutlineKeyboardArrowUp className='text-2xl' /> : <MdKeyboardArrowDown className='text-2xl' />}
         </div>
         {fundDrop && (
@@ -34,7 +34,7 @@ const Fundamentals = () => {
 
             <div className='bg-[#F6F7F9] rounded-xl mt-2 p-3 w-full '>
               <div>
-                <p className='text-xs text-black'>Zip Code</p>
+                <p className='text-xs text-[#1A202C]'>Zip Code</p>
                 <input type="number" placeholder='796854' className='bg-[#F6F7F9] w-full  text-md text-[#90A3BF] outline-none' />
               </div>
             </div>
@@ -56,7 +56,7 @@ const Fundamentals = () => {
             
             <div className='bg-[#F6F7F9] rounded-xl mt-10 p-3 w-full '>
               <div>
-                <p className='text-xs text-black'>Mileage (Miles)</p>
+                <p className='text-xs text-[#1A202C]'>Mileage (Miles)</p>
                 <input type="number" placeholder='45,000' className='bg-[#F6F7F9] w-full  text-md text-[#90A3BF] outline-none' />
               </div>
             </div>

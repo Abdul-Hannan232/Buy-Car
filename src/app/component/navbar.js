@@ -31,7 +31,7 @@ const Navbar = () => {
                 </Link> 
                
                 <div className='xl:block hidden'>
-                    <ul className='text-md font-medium flex items-center xl:space-x-10 space-x-4  ' >
+                    <ul className='text-md  flex items-center xl:space-x-10 space-x-4  ' >
                         <li className='hover:text-[#0B5CFF] '><Link href="/">Home</Link></li>
                         <li className='hover:text-[#0B5CFF]'><Link href="/usedCar">Used Cars</Link></li>
                         <li className='hover:text-[#0B5CFF]'><Link href="#">Car Payment Calculator</Link></li>
@@ -52,14 +52,14 @@ const Navbar = () => {
                     </div>
                     <div className='flex items-center gap-1 xl:border-[#0B5CFF] xl:border-2 xl:rounded-2xl xl:p-1'>
                         <button
-                            className={`focus:bg-[#0B5CFF] xl:block hidden cursor-pointer   w-24 text-sm    text-black rounded-xl text-center p-3 ${activeButton === 'login' ? 'bg-[#0B5CFF] text-white' : ''
+                            className={`focus:bg-[#0B5CFF] xl:block hidden cursor-pointer   w-24 text-sm    text-[#1A202C] rounded-xl text-center p-3 ${activeButton === 'login' ? 'bg-[#0B5CFF] text-white' : ''
                                 }`}
                             onClick={handleLoginClick}
                         >
                             Login
                         </button>
                         <button
-                            className={`focus:bg-[#0B5CFF]  xl:block hidden cursor-pointer  w-24 text-sm       text-black rounded-xl text-center p-3 ${activeButton === 'signup' ? 'bg-[#0B5CFF] text-white' : ''
+                            className={`focus:bg-[#0B5CFF]  xl:block hidden cursor-pointer  w-24 text-sm       text-[#1A202C] rounded-xl text-center p-3 ${activeButton === 'signup' ? 'bg-[#0B5CFF] text-white' : ''
                                 }`}
                             onClick={handleSignupClick}
                         >
@@ -72,7 +72,7 @@ const Navbar = () => {
                 {dropDown && (
                     <div className='bg-gray-100 absolute md:top-20 top-16 h-screen right-0 left-0 transition-all duration-300 ease-in-out'>
                         <div className='w-[85%] mx-auto mt-20'>
-                            <div className='flex items-center mt-2 gap-4 p-3 bg-white hover:bg-[#0B5CFF] rounded-xl hover:text-white text-black'>
+                            <div className='flex items-center mt-2 gap-4 p-3 bg-white hover:bg-[#0B5CFF] rounded-xl hover:text-white text-[#1A202C]'>
                                 <RiHome5Line className='text-3xl' />
                                 <Link href="/" onClick={closeDropdown} className='text-md font-medium'>Home</Link>
                             </div>
@@ -80,7 +80,7 @@ const Navbar = () => {
                                 <LiaCarSolid className='text-3xl' />
                                 <Link href="/usedCar" onClick={closeDropdown} className='text-md font-medium'>Used Cars</Link>
                             </div>
-                            <div className='flex items-center mt-2 gap-4 p-3 bg-white hover:bg-[#0B5CFF] rounded-xl hover:text-white text-black'>
+                            <div className='flex items-center mt-2 gap-4 p-3 bg-white hover:bg-[#0B5CFF] rounded-xl hover:text-white text-[#1A202C]'>
                                 <TbCalculator className='text-3xl' />
                                 <Link href="#" onClick={closeDropdown} className='text-md font-medium'>Car Payment Calculator</Link>
                             </div>

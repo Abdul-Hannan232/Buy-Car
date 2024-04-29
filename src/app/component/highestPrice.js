@@ -13,7 +13,7 @@ const HighestPrice = ({ Data, title, subTitle }) => {
 
             <div onClick={porcheDrop} className='bg-[#F6F7F9]   rounded-xl p-3 flex justify-between items-center cursor-pointer '>
                 <div>
-                    <p className='lg:text-sm text-xs font-medium text-black'>{title}</p>
+                    <p className='lg:text-sm text-xs font-medium text-[#1A202C]'>{title}</p>
                     <h1 className='lg:text-md text-sm text-[#90A3BF] '>{subTitle}</h1>
                 </div>
                 <MdKeyboardArrowDown className='text-2xl' />

@@ -8,7 +8,7 @@ const BookMark = () => {
             <div className=' w-full md:h-[30vh] md:mt-40 mt-24 h-[20vh] flex flex-col justify-center text-center items-center'>
                 <div className='md:w-[50%] w-[80%] mx-auto '>
                     <p className='text-md text-[#0B5CFF] text-center'>Your Saved Cars</p>
-                    <h1 className='text-5xl font-bold text-black text-center'>Bookmarks</h1>
+                    <h1 className='text-5xl font-bold text-[#1A202C] text-center'>Bookmarks</h1>
                     <div className='bg-white relative md:rounded-xl rounded-lg '>
                         <div className='w-full  md:mt-6 mt-3 p-2'>
                             <CiSearch className='absolute left-8 md:top-9 top-5 text-[#90A3BF] md:text-3xl text-xl ' />

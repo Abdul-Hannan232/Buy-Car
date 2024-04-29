@@ -11,7 +11,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import renderStars from '@/utils/rating';
 import Link from "next/link"
-const PopularCars = ({ Data, grid }) => {
+const PopularCars = ({ Data, grid ,color,textColor,borderRadius}) => {
 
     const [clickedItems, setClickedItems] = useState([]);
     const handleClick = (index) => {
@@ -62,7 +62,7 @@ const PopularCars = ({ Data, grid }) => {
 
                                 <p className=' 2xl:text-sm text-xs  text-[#90A3BF] font-bold'>{item.building}</p>
                             </div>
-                            <button className='w-44  absolute left-0 right-0 hover:bg-opacity-90 2xl:mt-10  mt-8 flex justify-center  mx-auto text-white bg-[#0B5CFF] text-center py-3 rounded-xl text-md font-medium'>Check Availability </button>
+                            <button className={`w-44  absolute  left-0 right-0 2xl:mt-10  mt-8 flex justify-center  mx-auto text-[${textColor}]  bg-[${color}] text-center font-bold py-3 rounded-${borderRadius} text-md font-medium`}>Check Availability </button>
 
                         </div>
                     </Link>
