@@ -18,8 +18,8 @@ const BookMark = () => {
                 </div>
             </div>
             <div className='w-[80%] mx-auto'>
-            <PopularCars Data={BookmarkData} />
-            <PopularCars Data={BookmarkData} />
+            <PopularCars Data={BookmarkData} grid={"xl:grid-cols-4"} color={"#D3E2FF"} textColor={'text-[#0B5CFF]'} borderRadius={"2xl"}/>
+            <PopularCars Data={BookmarkData} grid={"xl:grid-cols-4"} color={"#D3E2FF"} textColor={'text-[#0B5CFF]'} borderRadius={"2xl"}/>
 
             </div>
         </div>
