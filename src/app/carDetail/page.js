@@ -83,25 +83,25 @@ export default function Home() {
                                     <h1 className='text-[#90A3BF] lg:text-sm text-xs'>Hybrid</h1>
                                 </div>
                                 <div className='text-center'>
-                                    <Image src="/Group 110.png" alt="image1" width={24} height={24} className='mxlg:w-[24px] lg:h-[24px] w-5 h-5 mx-auto' />
+                                    <Image src="/Group 110.png" alt="image1" width={24} height={24} className='lg:w-[24px] lg:h-[24px] w-5 h-5 mx-auto' />
                                     <h1 className='text-[#90A3BF] lg:text-sm text-xs'>Automatic</h1>
                                 </div>
                             </div>
                         </div>
                         <div>
-                            <div className='lg:mt-0 mt-5 bg-white lg:w-56 rounded-xl p-5'>
+                            <div className='lg:mt-0 mt-5 bg-white lg:w-60 rounded-xl p-5'>
                                 <div className='flex justify-between  gap-3'>
                                     <div className='flex gap-3'>
-                                        <Image src="/redLogo.png" alt="image" width={44} height={44} className='' />
+                                        <Image src="/redLogo.png" alt="image" width={44} height={30} className='' />
                                         <div>
-                                            <h1 className=' text-sm text-[#1A202C]'>DealerShip</h1>
-                                            <h1 className='text-[#90A3BF]  text-sm font-medium'>Sunshine Honda</h1>
+                                            <h1 className=' md:text-sm text-md text-[#1A202C]'>DealerShip</h1>
+                                            <h1 className='text-[#90A3BF]  md:text-sm text-md font-medium'>Sunshine Honda</h1>
                                         </div>
                                     </div>
                                     <RxExternalLink className='text-[#90A3BF] text-xl ' />
 
                                 </div>
-                                <div className='flex lg:mt-0 mt-5 items-center lg:my-2 my-1 gap-2 space-x-1'>
+                                <div className='flex  mt-5 items-center lg:my-2 my-1 gap-2 space-x-1'>
                                     <IoIosCall className='2xl:text-md text-sm  text-[#90A3BF] text-3xl' />
                                     <p className=' text-[9px] text-[#90A3BF] '>123 - 456 - 789</p>
                                 </div>
@@ -126,25 +126,25 @@ export default function Home() {
                 <div className='lg:w-full w-[90%] lg:mx-0 mx-auto lg:mt-0 mt-10  bg-white p-3 rounded-xl'>
                     <h1 className='text-2xl text-[#313131] font-bold text-center'>Contact Dealer</h1>
                     <hr className='border my-3' />
-                    <div className='relative  w-full'>
-                        <h1 className='text-sm text-[#1A202C] absolute left-3 top-3'>Name</h1>
-                        <input type='text ' placeholder='Chris Dewlon' className='outline-none hover:border-[#0B5CFF] border-2   bg-[#F6F7F9]  w-full  mt-2 rounded-xl py-5 text-sm px-2 text-[#90A3BF]' />
+                    <div className='relative  w-full '>
+                        <h1 className='text-sm text-[#1A202C] absolute left-3 top-5'>Name</h1>
+                        <input type='text ' placeholder='Chris Dewlon' className='outline-none hover:border-[#0B5CFF] border-2   bg-[#F6F7F9]  w-full  mt-2 rounded-xl pt-7 pb-3  text-sm px-3 text-[#90A3BF]' />
                     </div>
                     <div className='relative mt-3 w-full'>
-                        <h1 className='text-sm text-[#1A202C] absolute left-3 top-3'>Email  </h1>
-                        <input type='text ' placeholder='dewlon@gmail.com' className='outline-none hover:border-[#0B5CFF] border-2  bg-[#F6F7F9]  w-full  mt-2 rounded-xl py-5 text-sm px-2 text-[#90A3BF]' />
+                        <h1 className='text-sm text-[#1A202C] absolute left-3 top-5'>Email  </h1>
+                        <input type='text ' placeholder='dewlon@gmail.com' className='outline-none hover:border-[#0B5CFF] border-2  bg-[#F6F7F9]  w-full  mt-2 rounded-xl  pt-7 pb-3  text-sm px-3 text-[#90A3BF]' />
                     </div>
                     <div className='relative mt-3 w-full'>
-                        <h1 className='text-sm text-[#1A202C] absolute left-3 top-3'>Phone</h1>
-                        <input type='text ' placeholder='123 456 789' className=' outline-none hover:border-[#0B5CFF] border-2 bg-[#F6F7F9]  w-full  mt-2 rounded-xl py-5 text-sm px-2 text-[#90A3BF]' />
+                        <h1 className='text-sm text-[#1A202C] absolute left-3 top-5'>Phone</h1>
+                        <input type='text ' placeholder='123 456 789' className=' outline-none hover:border-[#0B5CFF] border-2 bg-[#F6F7F9]  w-full  mt-2 rounded-xl pt-7 pb-3 text-sm px-3 text-[#90A3BF]' />
                     </div>
                     <div className='relative mt-3 w-full'>
-                        <h1 className='text-sm text-[#1A202C] absolute left-3 top-3'>Reason For Contact</h1>
-                        <input type='text ' placeholder='Check availability' className='outline-none hover:border-[#0B5CFF] border-2  bg-[#F6F7F9]  w-full  mt-2 rounded-xl py-5 text-sm px-2 text-[#90A3BF]' />
+                        <h1 className='text-sm text-[#1A202C] absolute left-3 top-5'>Reason For Contact</h1>
+                        <input type='text ' placeholder='Check availability' className='outline-none hover:border-[#0B5CFF] border-2  bg-[#F6F7F9]  w-full  mt-2 rounded-xl pt-7 pb-3 text-sm px-3 text-[#90A3BF]' />
                     </div>
                     <div className='relative   mt-3    w-full'>
-                        <h1 className='text-sm text-[#1A202C] absolute left-3 top-3'>Message</h1>
-                        <textarea type='text ' placeholder='Im interested in learning more about your inventory of [specific car make/model]. Could you please provide me with additional details such as available trim levels, pricing options, and any current promotions or discounts? Also, Id appreciate any insights you can offer regarding financing options and trade-in possibilities.' className=' bg-[#F6F7F9]  w-full  mt-2 rounded-xl pt-8 pb-8 h-48 utline-none hover:border-[#0B5CFF] border-2   text-sm px-3 text-[#90A3BF]' />
+                        <h1 className='text-sm text-[#1A202C] absolute left-3 top-5'>Message</h1>
+                        <textarea type='text ' placeholder='Im interested in learning more about your inventory of [specific car make/model]. Could you please provide me with additional details such as available trim levels, pricing options, and any current promotions or discounts? Also, Id appreciate any insights you can offer regarding financing options and trade-in possibilities.' className=' bg-[#F6F7F9]  w-full  mt-2 rounded-xl pt-8 pb-4 h-48 utline-none hover:border-[#0B5CFF] border-2   text-sm px-3 text-[#90A3BF]' />
                     </div>
                     <button className='bg-[#0B5CFF] text-white text-center p-3 w-full rounded-xl mt-3 text-xl'>Submit</button>
                 </div>

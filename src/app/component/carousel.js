@@ -29,7 +29,7 @@ const Carousel = () => {
                     <FaLessThan className='text-sm lg:text-xl'/>
                 </button>
                 <div className='md:w-[680px] lg:mx-0 mx-5 w-full mx-auto  md:h-80'>
-                    <img src={images[selectedImageIndex]} alt="Selected" className="mb-4 w-full rounded-xl md:h-96 h-40" />
+                    <img src={images[selectedImageIndex]} alt="Selected" className="mb-4 w-full rounded-xl md:h-96 h-48" />
                 </div>
                 <button className=" text-white bg-white -ml-16 z-40 absoulte bg-opacity-50 lg:p-3 p-1 lg:rounded-xl rounded-md" onClick={handleNext}>
                     <FaGreaterThan className='text-sm lg:text-xl'/>
@@ -43,7 +43,7 @@ const Carousel = () => {
                             key={index}
                             src={image}
                             alt={`Image ${index}`}
-                            className={`lg:w-40 md:w-20 w-14 lg:h-20 md:h-14 h-12  ml-2 lg:rounded-xl rounded-md object-cover cursor-pointer ${index === selectedImageIndex ? 'border-2 border-blue-500' : ''
+                            className={`lg:w-40 md:w-20 w-16 lg:h-20 md:h-14 h-12  ml-2 lg:rounded-xl rounded-md object-cover cursor-pointer ${index === selectedImageIndex ? 'border-2 border-blue-500' : ''
                                 }`}
                             onClick={() => setSelectedImageIndex(index)}
                         />
