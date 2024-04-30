@@ -26,7 +26,7 @@ const reviews = ({ grid, width }) => {
   return (
     <>
       <div>
-        <div className={` bg-white lg:p-8 p-5 rounded-xl lg:w-[${width}%] lg:w-full lg:mx-auto mx-5 mb-18 mt-5`}>
+        <div className={` bg-white lg:p-8 p-5 rounded-xl lg:w-[80%] lg:w-full lg:mx-auto mx-5 mb-18 mt-5`}>
           <div className='flex items-center  justify-between '>
             <div>
               <h1 className='font-bold'>Reviews</h1>

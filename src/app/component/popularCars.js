@@ -12,8 +12,6 @@ import 'react-toastify/dist/ReactToastify.css';
 import renderStars from '@/utils/rating';
 import Link from "next/link"
 const PopularCars = ({ Data, grid, color, textColor, borderRadius }) => {
-    console.log(grid, "grid")
-    const test = "1"
     const [clickedItems, setClickedItems] = useState([]);
     const handleClick = (index) => {
         const newClickedItems = [...clickedItems];
@@ -30,7 +28,7 @@ const PopularCars = ({ Data, grid, color, textColor, borderRadius }) => {
         <div className=' mx-auto md:mt-14 mt-5 z-40 '>
             <ToastContainer />
 
-            <div className={`mt-14 grid xl:grid-cols-${test} lg:grid-cols-3 justify-center  md:grid-cols-2 gris-cols-1 gap-5`}>
+            <div className={`mt-14 grid ${grid} lg:grid-cols-3 justify-center  md:grid-cols-2 place-items-center  grid-cols-1 gap-5`}>
                 {Data.map((item, index) => (
                     <Link href="/carDetail">
 
@@ -63,7 +61,7 @@ const PopularCars = ({ Data, grid, color, textColor, borderRadius }) => {
 
                                 <p className=' 2xl:text-sm text-xs  text-[#90A3BF] font-bold'>{item.building}</p>
                             </div>
-                            <button className={`w-44  absolute  left-0 right-0 2xl:mt-10  mt-8 flex justify-center  mx-auto text-[${textColor}]  bg-[${color}] text-center font-bold py-3 rounded-${borderRadius} text-md font-medium`}>Check Availability </button>
+                            <button className={`w-44  absolute  left-0 right-0 2xl:mt-10  mt-8 flex justify-center  mx-auto ${textColor}  bg-[${color}] text-center font-bold py-3 rounded-${borderRadius} text-md font-medium`}>Check Availability </button>
 
                         </div>
                     </Link>

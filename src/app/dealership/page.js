@@ -37,18 +37,18 @@ const Dealership = () => {
                         </div>
                     </div>
                 </div>
-                <div className='flex items-center justify-center gap-2 bg-white rounded-xl p-3 lg:w-[67%] w-full mx-auto mt-20'>
+                <div className='flex items-center justify-center gap-2 bg-white rounded-xl p-3 lg:w-[80%] w-full mx-auto mt-20'>
                     <p className='text-[#1A202C] lg:text-sm text-xs font-bold'>All Cars from </p>
                     <p className='text-[#0B5CFF] lg:text-sm text-xs font-bold'>Sunshine Honda</p>
                 </div>
-                <div className='lg:w-[70%] w-full mx-auto'>
-                    <PopularCars Data={HomeData} grid="3" color={"#D3E2FF"} textColor={"#0B5CFF"} borderRadius={"2xl"} />
+                <div className='lg:w-[80%] w-full mx-auto'>
+                    <PopularCars Data={HomeData} grid={"xl:grid-cols-3"} color={"#D3E2FF"} textColor={"#0B5CFF"} borderRadius={"2xl"} />
                 </div>
-                <div className='flex items-center justify-center gap-2 bg-white rounded-xl p-3 lg:w-[67%] w-full mx-auto mt-20'>
+                <div className='flex items-center justify-center gap-2 bg-white rounded-xl p-3 lg:w-[80%] w-full mx-auto mt-20'>
                     <p className='text-[#1A202C] lg:text-sm text-xs font-bold'>All Reviews of  </p>
                     <p className='text-[#0B5CFF] lg:text-sm text-xs font-bold'>Sunshine Honda</p>
                 </div>
-                <Review grid="2" width="67"/>
+                <Review grid={"2"}/>
 
             </div>
            

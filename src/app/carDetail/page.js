@@ -237,7 +237,7 @@ export default function Home() {
                 </div>
             </div>
             <div>
-                <Reviews grid="3" width="85" />
+                <Reviews grid={"3"} />
             </div>
             {/* <div className='flex justify-center mb-40'>
                 <button className='bg-[#0B5CFF] w-96 text-xl font-medium rounded-xl p-5  mx-auto text-center text-white'>More Cars
