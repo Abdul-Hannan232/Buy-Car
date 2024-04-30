@@ -31,8 +31,17 @@ const reviews = ({ grid, width }) => {
             <div>
               <h1 className='font-bold'>Reviews</h1>
               <div className='flex items-center space-x-1'>
-
-                <p className='text-sm font-bold  text-[#90A3BF]'>(23)</p>
+              <div className='flex  items-center space-x-1'>
+                    <PiMedalFill className='lg:text-md lg:block hidden text-sm text-[#90A3BF] text-2xl ' />
+                    <p className='text-md  text-[#90A3BF] md:block hidden '>4.0</p>
+                    <IoMdStar className=' text-[#FBAD39] text-md  lg:block hidden'/>
+                    <IoMdStar className=' text-[#FBAD39] text-md  lg:block hidden'/>
+                    <IoMdStar className=' text-[#FBAD39] text-md  lg:block hidden'/>
+                    <IoMdStar className=' text-[#FBAD39] text-md  lg:block hidden'/>
+                    <IoMdStar className=' focus:text-[#FBAD39]  lg:block hidden text-md  text-[#90A3BF]' />
+                    <p className='text-md  text-[#90A3BF] lg:block hidden'>(32 reviews)</p>
+                </div>
+                <p className='text-sm font-bold lg:hidden block  text-[#90A3BF]'>(23)</p>
 
               </div>
             </div>
@@ -45,11 +54,11 @@ const reviews = ({ grid, width }) => {
                 <div key={index} className='lg:w-[330px] lg:m-5 m-1'>
                   <div className='flex items-center gap-2'>
                     <Image src="/user.png" alt="user" width={45} height={45} />
-                    <div>
+                    <div className=''>
                       <h1 className='text-lg font-bold'>{item.userName}</h1>
                       <div className='flex items-center'>
-                        <p className='2xl:text-md text-xs text-[#90A3BF]'>4.0</p>
-                        {renderStars(item.rating)}
+                        <p className='text-md text-[#90A3BF]'>4.0</p>
+                      <p className='text-xl flex items-center text-[#90A3BF]'>{renderStars(item.rating)}</p>  
                       </div>
                     </div>
                   </div>
