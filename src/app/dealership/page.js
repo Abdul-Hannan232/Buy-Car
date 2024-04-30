@@ -48,7 +48,7 @@ const Dealership = () => {
                     <p className='text-[#1A202C] lg:text-sm text-xs font-bold'>All Reviews of  </p>
                     <p className='text-[#0B5CFF] lg:text-sm text-xs font-bold'>Sunshine Honda</p>
                 </div>
-                <Review grid={"2"}/>
+                <Review grid={"2"} column={"lg:grid-cols-2"}/>
 
             </div>
            

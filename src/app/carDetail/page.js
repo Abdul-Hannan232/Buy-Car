@@ -62,7 +62,7 @@ export default function Home() {
     ]
     return (
         <>
-            <div className='lg:flex  mt-32 gap-10 lg:w-[85%] mx-auto '>
+            <div className='lg:flex  mt-32 gap-10 lg:w-[80%] mx-auto '>
                 <main className="container mx-auto lg:w-[60%] ">
                     <Carousel />
                     <div className='lg:flex items-end gap-5 mt-5 lg:mx-0 mx-5 '>
@@ -150,7 +150,7 @@ export default function Home() {
                 </div>
 
             </div>
-            <div className='bg-white lg:w-[85%] lg:mx-auto mx-5 lg:px-24 px-5 lg:pt-24 pt-5 pb-10 mt-20 rounded-xl'>
+            <div className='bg-white lg:w-[80%] lg:mx-auto mx-5 lg:px-24 px-5 lg:pt-24 pt-5 pb-10 mt-20 rounded-xl'>
                 <div className='flex justify-center'>
                     <button
                         className='text-lg font-bold flex justify-center text-center p-3 rounded-xl text-[#0B5CFF] w-48  bg-[#D3E2FF]'>CAR
@@ -226,18 +226,18 @@ export default function Home() {
                     </div>
                 </div>
                 <div className='flex  items-center space-x-1'>
-                    <PiMedalFill className='lg:text-md text-sm text-[#90A3BF] text-2xl ' />
-                    <p className='lg:text-md text-[7px] text-[#90A3BF] '>4.0</p>
-                    <IoMdStar className=' text-[#FBAD39] lg:text-md text-[7px]'/>
-                    <IoMdStar className=' text-[#FBAD39] lg:text-md text-[7px]'/>
-                    <IoMdStar className=' text-[#FBAD39] lg:text-md text-[7px]'/>
-                    <IoMdStar className=' text-[#FBAD39] lg:text-md text-[7px]'/>
-                    <IoMdStar className=' focus:text-[#FBAD39]  lg:text-md text-[7px] text-[#90A3BF]' />
-                    <p className='lg:text-md text-[7px] text-[#90A3BF]'>(32 reviews)</p>
+                    <PiMedalFill className='lg:text-sm text-sm text-[#90A3BF] text-2xl ' />
+                    <p className='lg:text-sm text-[7px] text-[#90A3BF] '>4.0</p>
+                    <IoMdStar className=' text-[#FBAD39] lg:text-sm text-[7px]'/>
+                    <IoMdStar className=' text-[#FBAD39] lg:text-sm text-[7px]'/>
+                    <IoMdStar className=' text-[#FBAD39] lg:text-sm text-[7px]'/>
+                    <IoMdStar className=' text-[#FBAD39] lg:text-sm text-[7px]'/>
+                    <IoMdStar className=' focus:text-[#FBAD39]  lg:text-sm text-[7px] text-[#90A3BF]' />
+                    <p className='lg:text-sm text-[7px] text-[#90A3BF]'>(32 reviews)</p>
                 </div>
             </div>
             <div>
-                <Reviews grid={"3"} />
+                <Reviews grid={3} column={"lg:grid-cols-3"}/>
             </div>
             {/* <div className='flex justify-center mb-40'>
                 <button className='bg-[#0B5CFF] w-96 text-xl font-medium rounded-xl p-5  mx-auto text-center text-white'>More Cars

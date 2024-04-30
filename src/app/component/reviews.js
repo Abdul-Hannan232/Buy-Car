@@ -9,7 +9,7 @@ import Image from 'next/image';
 import { RxCross2 } from "react-icons/rx";
 import { ImStarEmpty } from "react-icons/im";
 
-const reviews = ({ grid, width }) => {
+const reviews = ({ grid, column }) => {
   const [showAll, setShowAll] = useState(false);
   const [popup, setPopup] = useState(false)
   console.log(renderStars(3), "renderStars")
@@ -25,8 +25,8 @@ const reviews = ({ grid, width }) => {
 
   return (
     <>
-      <div>
-        <div className={` bg-white lg:p-8 p-5 rounded-xl lg:w-[80%] lg:w-full lg:mx-auto mx-5 mb-18 mt-5`}>
+      <div className='lg:w-[85%] mx-auto'>
+        <div className={` bg-white lg:p-8 p-5 rounded-xl lg:w-[85%] lg:w-full lg:mx-auto mx-5 mb-18 mt-5`}>
           <div className='flex items-center  justify-between '>
             <div>
               <h1 className='font-bold'>Reviews</h1>
@@ -49,7 +49,7 @@ const reviews = ({ grid, width }) => {
           </div>
           <hr className='my-10 border-2' />
           <div cl>
-            <div className={`grid lg:grid-cols-${grid} place-items-center items-center justify-center gap-18`}>
+            <div className={`grid ${column} place-items-center items-center justify-center gap-24`}>
               {Reviews.slice(0, showAll ? Reviews.length : grid).map((item, index) => (
                 <div key={index} className='lg:w-[330px] lg:m-5 m-1'>
                   <div className='flex items-center gap-2'>
