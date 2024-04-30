@@ -30,7 +30,7 @@ const Style = () => {
 
                         <DropdownWithSearch color={"#ff0000"} Data={CarColor} title="Exterior Color" subTitle="Red" />
 
-                        <DropdownWithSearch color={"#FBAD39"} Data={CarColor} title="Interior Color" subTitle="Orange" />
+                        <DropdownWithSearch color={"#FF6B00"} Data={CarColor} title="Interior Color" subTitle="Orange" />
 
                     </>
                 )}
