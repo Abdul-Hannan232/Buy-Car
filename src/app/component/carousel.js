@@ -5,9 +5,9 @@ import { FaLessThan } from "react-icons/fa";
 
 const images = [
     '/carouselPic.png',
-    '/carouselPic.png',
-    '/carouselPic.png',
-    '/carouselPic.png',
+    '/carone.jpeg',
+    '/car2.jpg',
+    '/car3 (2).png',
 
 ];
 
