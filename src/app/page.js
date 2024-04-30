@@ -3,7 +3,7 @@ import { CiSearch } from "react-icons/ci";
 import PopularCars from './component/popularCars';
 import HomeData from "../data/home.json"
 const Home = () => {
-
+// hello
   return (
     <>
       <div className='homebanner w-full md:h-[80vh] h-[40vh] flex flex-col justify-end text-center items-end'>
