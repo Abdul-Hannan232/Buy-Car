@@ -29,7 +29,7 @@ const Carousel = () => {
                     <FaLessThan className='text-sm lg:text-xl'/>
                 </button>
                 <div className='md:w-[680px] lg:mx-0 mx-5 w-full mx-auto  md:h-80'>
-                    <img src={images[selectedImageIndex]} alt="Selected" className="mb-4 w-full rounded-xl md:h-96" />
+                    <img src={images[selectedImageIndex]} alt="Selected" className="mb-4 w-full rounded-xl md:h-96 h-40" />
                 </div>
                 <button className=" text-white bg-white -ml-16 z-40 absoulte bg-opacity-50 lg:p-3 p-1 lg:rounded-xl rounded-md" onClick={handleNext}>
                     <FaGreaterThan className='text-sm lg:text-xl'/>

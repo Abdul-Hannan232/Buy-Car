@@ -239,10 +239,10 @@ export default function Home() {
             <div>
                 <Reviews grid={3} column={"lg:grid-cols-3"}/>
             </div>
-            {/* <div className='flex justify-center mb-40'>
-                <button className='bg-[#0B5CFF] w-96 text-xl font-medium rounded-xl p-5  mx-auto text-center text-white'>More Cars
+            <div className='flex justify-center mb-40 mt-16'>
+                <button className='bg-[#0B5CFF] md:w-96 w-60 md:text-xl text-sm font-medium rounded-xl md:p-5 p-3  mx-auto text-center text-white'>More Cars
                     from this Dealership</button>
-            </div> */}
+            </div>
         </>
     );
 }
