@@ -7,7 +7,7 @@
     {
         "name": "Black",
         "count": "(989)",
-        "colorCode":"#EDEDED"
+        "colorCode":"#140c0c"
     },
     {
         "name": "White",
@@ -17,7 +17,7 @@
     {
         "name": "Red",
         "count": "(281)",
-        "colorCode":"#ED3F3F"
+        "colorCode":"#ff0000"
     },
     {
         "name": "Blue",

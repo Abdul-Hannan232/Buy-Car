@@ -28,9 +28,9 @@ const Style = () => {
 
                         {/* second dropdown */}
 
-                        <DropdownWithSearch Data={CarColor} title="Exterior Color" subTitle="Red" />
+                        <DropdownWithSearch color={"#ff0000"} Data={CarColor} title="Exterior Color" subTitle="Red" />
 
-                        <DropdownWithSearch Data={CarColor} title="Interior Color" subTitle="Orange" />
+                        <DropdownWithSearch color={"#FBAD39"} Data={CarColor} title="Interior Color" subTitle="Orange" />
 
                     </>
                 )}

@@ -68,7 +68,7 @@ const UsedCar = () => {
                             <MdKeyboardArrowDown className='text-3xl' />
                         </button>
                         {filter && (
-                            <div className='bg-white absolute z-80 left-0 right-0  w-full p-3 rounded-xl'>
+                            <div className='bg-white absolute z-40 left-0 right-0  w-full p-3 rounded-xl'>
                                 <Fundamentals />
                                 <Style />
                                 <Performence />
@@ -77,7 +77,7 @@ const UsedCar = () => {
                             </div>
                         )}
                     </div>
-                    <PopularCars column={"3"} Data={HomeData} grid={"xl:grid-cols-3"} color={"#D3E2FF"} textColor={'text-[#0B5CFF]'} borderRadius={"2xl"}/>
+                    <PopularCars column={"12"} Data={HomeData} grid={"xl:grid-cols-3"} color={"#D3E2FF"} textColor={'text-[#0B5CFF]'} borderRadius={"2xl"}/>
 
                 </div>
 

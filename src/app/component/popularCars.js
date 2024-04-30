@@ -32,10 +32,10 @@ const PopularCars = ({ Data, grid, color, textColor,column }) => {
     const paginate = pageNumber => setCurrentPage(pageNumber);
 
     return (
-        <div className=' mx-auto md:mt-14 mt-5 z-40 '>
+        <div className=' mx-auto md:mt-14 mt-5  '>
             <ToastContainer />
 
-            <div className={`mt-14 grid ${grid} lg:grid-cols-3 justify-between  md:grid-cols-2 place-items-center  grid-cols-1 gap-5`}>
+            <div className={`mt-14 grid ${grid} lg:grid-cols-3 z-20 justify-between  md:grid-cols-2 place-items-center  grid-cols-1 gap-5`}>
                 {currentItems.map((item, index) => (
                     <Link href="/carDetail" key={index}>
                         <div className='2xl:w-[340px] w-[260px] mb-20 rounded-3xl 2xl:p-10 p-6 bg-white 2xl:h-[450px] h-[380px] relative shadow-xl'>

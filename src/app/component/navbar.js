@@ -22,7 +22,7 @@ const Navbar = () => {
     };
 
     return (
-        <div className='bg-white shadow-xl fixed left-0 right-0 top-0 z-40 '>
+        <div className='bg-white shadow-xl fixed left-0 right-0 top-0 z-50 '>
             <div className='flex relative bg-white  items-center   justify-between  md:w-[82%] md:mx-auto px-5 xl:p-3   py-3'>
                 <Link href="/">
                     <div className='xl:border-r-[#CACACA] xl:pr-5 xl:border-2 border-transparent'>

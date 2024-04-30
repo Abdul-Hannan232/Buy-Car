@@ -20,7 +20,7 @@ const DropdownWithCar = ({ Data, title, subTitle }) => {
                 <MdKeyboardArrowDown className='text-2xl' />
             </div>
             {porche && (
-                <div className=' absolute left-0 z-40 grid  grid-cols-3 gap-2 bg-white right-0  p-2'>
+                <div className=' absolute left-0 grid  grid-cols-3 z-50 gap-2 bg-white right-0  p-4'>
                     {Data.map((item) => (
                      <div className='bg-[#EDEDED] rounded-lg p-2 h-22'>
                         <Image src="/image 6.png" alt="image 6" width={71} height={32}/>
