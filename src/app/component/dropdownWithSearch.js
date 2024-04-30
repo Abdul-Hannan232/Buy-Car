@@ -4,7 +4,7 @@ import { CiSearch } from "react-icons/ci";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { TiTick } from "react-icons/ti";
 
-const DropdownWithSearch = ({ Data, title, subTitle ,color }) => {
+const DropdownWithSearch = ({ Data, title, subTitle, color }) => {
     console.log(Data)
     const [porche, setPorche] = useState(false)
     const porcheDrop = () => {
@@ -19,10 +19,10 @@ const DropdownWithSearch = ({ Data, title, subTitle ,color }) => {
                     <h1 className='text-md text-[#90A3BF] '>{subTitle}</h1>
                 </div>
                 <div className='flex items-center gap-1'>
-                <div className={` rounded-md bg-[${color}]`} >
-                    <TiTick className='text-2xl text-white text-center p-1' />
-</div>
-                <MdKeyboardArrowDown className='text-2xl' />
+                    <div className={` rounded-md bg-[${color}]`} >
+                        <TiTick className='text-2xl text-white text-center p-1' />
+                    </div>
+                    <MdKeyboardArrowDown className='text-2xl' />
                 </div>
             </div>
             {porche && (
@@ -34,7 +34,7 @@ const DropdownWithSearch = ({ Data, title, subTitle ,color }) => {
                     {Data.map((item) => (
                         <div className='flex items-center  space-x-2 text-md pl-3 hover:bg-[#0B5CFF] p-1 hover:text-white rounded-lg cursor-pointer'>
                             <input type="checkbox" className='border-[#787878] w-4 h-4' />
-                                <div className={`w-5 h-5 rounded-md bg-[${item.colorCode}]`} ></div>
+                            <div className={`w-5 h-5 rounded-md bg-[${item.colorCode}]`} ></div>
                             <h1>{item.name}</h1>
                             <p className='text-[10px] text-[#90A3BF]'>{item.count}</p>
                         </div>
