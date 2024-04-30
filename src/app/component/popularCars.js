@@ -10,7 +10,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import renderStars from '@/utils/rating';
 
-const PopularCars = ({ Data, grid, color, textColor,column }) => {
+const PopularCars = ({ Data, grid, color, textColor, column }) => {
     const [clickedItems, setClickedItems] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
     const [itemsPerPage] = useState(column); // Number of items per page
@@ -73,17 +73,18 @@ const PopularCars = ({ Data, grid, color, textColor,column }) => {
 
             {/* Pagination */}
             <ul className="flex justify-end">
-    {[...Array(Math.min(10, Math.ceil(Data.length / itemsPerPage))).keys()].map(number => (
-        <li key={number} className="mx-1 my-1">
-            <button
-                onClick={() => paginate(number + 1)}
-                className={`px-3 py-1 rounded-xl ${currentPage === number + 1 ? 'bg-[#0B5CFF] text-white' : 'bg-white'}`}
-            >
-                {number + 1}
-            </button>
-        </li>
-    ))}
-</ul>
+                {[...Array(Math.min(10, Math.ceil(Data.length / itemsPerPage))).keys()].map(number => (
+                    <li key={number} className="mx-1 my-1">
+                        <button
+                            onClick={() => paginate(number + 1)}
+                            className={`px-3 py-1 rounded-lg ${currentPage === number + 1 ? 'bg-[#0B5CFF] text-white' : 'bg-white'}`}
+                        >
+                            {number + 1}
+                        </button>
+                    </li>
+                ))}
+            </ul>
+
 
         </div>
     );
