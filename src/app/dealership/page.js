@@ -42,7 +42,7 @@ const Dealership = () => {
                     <p className='text-[#0B5CFF] lg:text-sm text-xs font-bold'>Sunshine Honda</p>
                 </div>
                 <div className='lg:w-[80%] w-full mx-auto'>
-                    <PopularCars Data={HomeData} grid={"xl:grid-cols-3"} color={"#D3E2FF"} textColor={"text-[#0B5CFF]"} borderRadius={"2xl"} />
+                    <PopularCars column={"9"} Data={HomeData} grid={"xl:grid-cols-3"} color={"#D3E2FF"} textColor={"text-[#0B5CFF]"} borderRadius={"2xl"} />
                 </div>
                 <div className='flex items-center justify-center gap-2 bg-white rounded-xl p-3 lg:w-[80%] w-full mx-auto mt-20'>
                     <p className='text-[#1A202C] lg:text-sm text-xs font-bold'>All Reviews of  </p>
