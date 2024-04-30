@@ -31,15 +31,15 @@ const reviews = ({ grid, column }) => {
             <div>
               <h1 className='font-bold'>Reviews</h1>
               <div className='flex items-center space-x-1'>
-              <div className='flex  items-center space-x-1'>
-                    <PiMedalFill className='lg:text-md lg:block hidden text-sm text-[#90A3BF] text-2xl ' />
-                    <p className='text-md  text-[#90A3BF] md:block hidden '>4.0</p>
-                    <IoMdStar className=' text-[#FBAD39] text-md  lg:block hidden'/>
-                    <IoMdStar className=' text-[#FBAD39] text-md  lg:block hidden'/>
-                    <IoMdStar className=' text-[#FBAD39] text-md  lg:block hidden'/>
-                    <IoMdStar className=' text-[#FBAD39] text-md  lg:block hidden'/>
-                    <IoMdStar className=' focus:text-[#FBAD39]  lg:block hidden text-md  text-[#90A3BF]' />
-                    <p className='text-md  text-[#90A3BF] lg:block hidden'>(32 reviews)</p>
+                <div className='flex  items-center space-x-1'>
+                  <PiMedalFill className='lg:text-md lg:block hidden text-sm text-[#90A3BF] text-2xl ' />
+                  <p className='text-md  text-[#90A3BF] md:block hidden '>4.0</p>
+                  <IoMdStar className=' text-[#FBAD39] text-md  lg:block hidden' />
+                  <IoMdStar className=' text-[#FBAD39] text-md  lg:block hidden' />
+                  <IoMdStar className=' text-[#FBAD39] text-md  lg:block hidden' />
+                  <IoMdStar className=' text-[#FBAD39] text-md  lg:block hidden' />
+                  <IoMdStar className=' focus:text-[#FBAD39]  lg:block hidden text-md  text-[#90A3BF]' />
+                  <p className='text-md  text-[#90A3BF] lg:block hidden'>(32 reviews)</p>
                 </div>
                 <p className='text-sm font-bold lg:hidden block  text-[#90A3BF]'>(23)</p>
 
@@ -58,7 +58,7 @@ const reviews = ({ grid, column }) => {
                       <h1 className='text-lg font-bold'>{item.userName}</h1>
                       <div className='flex items-center'>
                         <p className='text-md text-[#90A3BF]'>4.0</p>
-                      <p className='text-xl flex items-center text-[#90A3BF]'>{renderStars(item.rating)}</p>  
+                        <p className='text-xl flex items-center text-[#90A3BF]'>{renderStars(item.rating)}</p>
                       </div>
                     </div>
                   </div>
@@ -91,8 +91,10 @@ const reviews = ({ grid, column }) => {
                 <ImStarEmpty className=' md:text-4xl text-2xl text-[#0B5CFF] ' />
                 <ImStarEmpty className=' md:text-4xl text-2xl text-[#0B5CFF] ' />
               </div>
+              <div className='bg-[#F6F7F9] p-3 rounded-xl'>
               <h1 className='text-sm text-[#313131] font-bold'>Remarks</h1>
-              <textarea className='text-[#90A3BF] md:h-36 h-36 w-full mt-2 md:text-lg text-xs'>Absolutely fantastic experience at Sunshine Honda Dealership! From the moment I walked in, the staff was friendly and attentive. They helped me find the perfect Honda Civic that fit my needs and budget. The buying process was smooth and transparent, and I never felt pressured. </textarea>
+              <textarea className='text-[#90A3BF] hover:border-[#0B5CFF] outline-none hover:border-2 p-2 rounded-xl md:h-36 h-36 w-full bg-[#F6F7F9] mt-2 md:text-sm text-xs'>Absolutely fantastic experience at Sunshine Honda Dealership! From the moment I walked in, the staff was friendly and attentive. They helped me find the perfect Honda Civic that fit my needs and budget. The buying process was smooth and transparent, and I never felt pressured. </textarea>
+            </div>
               <button onClick={reviewClose} className='w-full bg-[#0B5CFF] text-white md:text-xl text-sm md:p-3 p-2 rounded-xl text-white mt-7 '>Submit</button>
             </div>
           </div>
