@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import Carousel from '../component/carousel.js';
 import Image from "next/image"
 import { IoMdStar } from "react-icons/io";

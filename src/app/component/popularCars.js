@@ -37,7 +37,7 @@ const PopularCars = ({ Data, grid, color, textColor, column }) => {
 
             <div className={`mt-14 grid ${grid} lg:grid-cols-3 z-20 justify-between  md:grid-cols-2 place-items-center  grid-cols-1 gap-5`}>
                 {currentItems.map((item, index) => (
-                  
+                    <Link href="/carDetail" key={index}>
                         <div className='2xl:w-[340px] w-[260px] mb-20 rounded-3xl 2xl:p-10 p-6 bg-white 2xl:h-[450px] h-[380px] relative shadow-xl'>
                             <div className='flex justify-between'>
                                 <div>
@@ -49,9 +49,7 @@ const PopularCars = ({ Data, grid, color, textColor, column }) => {
                                     onClick={() => handleClick(index)}
                                 />
                             </div><br />
-                            <Link href="/carDetail" key={index}>
-                                 <Image src={item.image ? item.image[0] : "/car1.png"} alt="car" width={180} height={56} className='w-44 h-20' />
-                                 </Link> 
+                            <Image src={item.image ? item.image[0] : "/car1.png"} alt="car" width={180} height={56} className='w-44 h-20' />
                             <h1 className='2xl:text-4xl text-2xl font-bold text-[#0B5CFF] 2xl:my-7 my-4'>{item.amount}</h1>
                             <div className='flex items-center space-x-1'>
                                 <PiMedalFill className='2xl:text-md text-sm  text-[#90A3BF] text-3xl mr-2' />
@@ -69,6 +67,7 @@ const PopularCars = ({ Data, grid, color, textColor, column }) => {
                             </div>
                             <button className={`w-44  absolute  left-0 right-0 2xl:mt-10  mt-8 flex justify-center  mx-auto ${textColor}  bg-[${color}] text-center font-bold py-3 rounded-2xl text-md font-medium`}>Check Availability</button>
                         </div>
+                    </Link>
                 ))}
             </div>
 
