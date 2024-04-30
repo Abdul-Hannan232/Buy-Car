@@ -6,7 +6,7 @@ import Image from 'next/image';
 import Link from "next/link"
 const Footer = () => {
     return (
-        <div className='md:w-[95%] w-[87%] mx-auto bg-white md:rounded-3xl rounded-xl  md:p-14 p-7'>
+        <div className='md:w-[83%]  mx-auto bg-white md:rounded-3xl rounded-xl  md:p-14 p-7'>
             <div className='grid xl:grid-cols-2 justify-between '>
                 <div >
                     <Link href="/">

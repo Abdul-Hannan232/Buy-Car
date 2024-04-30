@@ -212,7 +212,7 @@ export default function Home() {
                     ))}
                 </div>
             </div>
-            <div className='flex items-center mt-5 bg-white mx-5 rounded-xl p-3 justify-between lg:w-[85%] lg:mx-auto'>
+            <div className='flex items-center mt-5 bg-white mx-5 rounded-xl p-3 justify-between lg:w-[80%] lg:mx-auto'>
                 <div className=' '>
                     <div className='flex gap-2 items-center '>
                         <Image src="/redLogo.png" alt="image" width={44} height={44} className='' />

@@ -23,13 +23,13 @@ const Navbar = () => {
 
     return (
         <div className='bg-white shadow-xl fixed left-0 right-0 top-0 z-40 '>
-            <div className='flex relative bg-white  items-center xl:justify-around  justify-between  w-full mx-auto xl:p-3  px-2 py-3'>
-               <Link href="/">
-               <div className='xl:border-r-[#CACACA] xl:pr-5 xl:border-2 border-transparent'>
-                    <Image src="/logo.png" alt="Logo" width={90} height={26} className='xl:w-48  w-32 ' />
-                </div>
-                </Link> 
-               
+            <div className='flex relative bg-white  items-center   justify-between  md:w-[82%] w-[88%] mx-auto xl:p-3   py-3'>
+                <Link href="/">
+                    <div className='xl:border-r-[#CACACA] xl:pr-5 xl:border-2 border-transparent'>
+                        <Image src="/logo.png" alt="Logo" width={90} height={26} className='xl:w-48  w-32 ' />
+                    </div>
+                </Link>
+
                 <div className='xl:block hidden'>
                     <ul className='text-md  flex items-center xl:space-x-10 space-x-4  ' >
                         <li className='hover:text-[#0B5CFF] '><Link href="/">Home</Link></li>
@@ -70,20 +70,24 @@ const Navbar = () => {
                 {/* mobile navbar dropdown */}
 
                 {dropDown && (
-                    <div className='bg-gray-100 absolute md:top-20 top-16 h-screen right-0 left-0 transition-all duration-300 ease-in-out'>
+                    <div className='bg-gray-100 absolute md:top-20 top-14 h-screen right-0 left-0 transition-all duration-300 ease-in-out'>
                         <div className='w-[85%] mx-auto mt-20'>
-                            <div className='flex items-center mt-2 gap-4 p-3 bg-white hover:bg-[#0B5CFF] rounded-xl hover:text-white text-[#1A202C]'>
+                            <Link href="/" onClick={closeDropdown} ><div className='flex items-center mt-2 gap-4 p-3 bg-white hover:bg-[#0B5CFF] rounded-xl hover:text-white text-[#1A202C]'>
                                 <RiHome5Line className='text-3xl' />
-                                <Link href="/" onClick={closeDropdown} className='text-md font-medium'>Home</Link>
+                                <p className='text-md font-medium'>Home</p>
                             </div>
-                            <div className='flex items-center mt-2 gap-4 p-3 hover:bg-[#0B5CFF] bg-white rounded-xl hover:text-white'>
+                            </Link>
+                            < Link href="/usedCar" onClick={closeDropdown}  > <div className='flex items-center mt-2 gap-4 p-3 hover:bg-[#0B5CFF] bg-white rounded-xl hover:text-white'>
                                 <LiaCarSolid className='text-3xl' />
-                                <Link href="/usedCar" onClick={closeDropdown} className='text-md font-medium'>Used Cars</Link>
+                                <p className='text-md font-medium'>Used Cars</p>
                             </div>
-                            <div className='flex items-center mt-2 gap-4 p-3 bg-white hover:bg-[#0B5CFF] rounded-xl hover:text-white text-[#1A202C]'>
-                                <TbCalculator className='text-3xl' />
-                                <Link href="#" onClick={closeDropdown} className='text-md font-medium'>Car Payment Calculator</Link>
-                            </div>
+                            </Link>
+                            < Link href="/usedCar" onClick={closeDropdown}>
+                                <div className='flex items-center mt-2 gap-4 p-3 bg-white hover:bg-[#0B5CFF] rounded-xl hover:text-white text-[#1A202C]'>
+                                    <TbCalculator className='text-3xl' />
+                                    <p className='text-md font-medium'>Car Payment Calculator</p>
+                                </div>
+                            </Link>
                             <div className='flex items-center gap-2 mt-20'>
                                 <button className='bg-[#D3E2FF] text-sm w-full text-center p-3 rounded-xl'>Login</button>
                                 <button className='bg-[#D3E2FF] text-sm w-full text-center p-3 rounded-xl'>Signup</button>

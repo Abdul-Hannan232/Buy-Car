@@ -5,7 +5,7 @@ const renderStars = (rating) => {
     for (let i = 0; i < 5; i++) {
         const starColor = i < rating ? '#FBAD39' : '#90A3BF';
         stars.push(
-            <IoMdStar key={i} className=' lg:text-xl text-sm' style={{ color: starColor }} />
+            <IoMdStar key={i} className=' lg:text-md text-sm' style={{ color: starColor }} />
         );
     }
     return stars;
