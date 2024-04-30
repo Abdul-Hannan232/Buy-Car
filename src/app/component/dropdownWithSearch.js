@@ -19,7 +19,7 @@ const DropdownWithSearch = ({ Data, title, subTitle, color }) => {
                     <h1 className='text-md text-[#90A3BF] '>{subTitle}</h1>
                 </div>
                 <div className='flex items-center gap-1'>
-                    <div className={`rounded-md bg-[${color}]`} >
+                    <div className={`rounded-md `}style={{ backgroundColor: color }} >
                         <TiTick className='text-2xl text-white text-center p-1' />
                     </div>
                     <MdKeyboardArrowDown className='text-2xl' />
