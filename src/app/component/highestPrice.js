@@ -10,7 +10,6 @@ const HighestPrice = ({ Data, title, subTitle }) => {
     }
     return (
         <div className='lg:w-60 w-full'>
-
             <div onClick={porcheDrop} className='bg-[#F6F7F9]   rounded-xl p-3 flex justify-between items-center cursor-pointer '>
                 <div>
                     <p className='lg:text-sm text-xs font-medium text-[#1A202C]'>{title}</p>
@@ -18,16 +17,17 @@ const HighestPrice = ({ Data, title, subTitle }) => {
                 </div>
                 <MdKeyboardArrowDown className='text-2xl' />
             </div>
+            <div className='w-full'>
             {porche && (
-                <div className=' absolute left-0 z-40 w-[90%] mx-auto bg-white right-0  p-3'>
-                    
+                <div className='absolute left-0 z-40 w-60  bg-white right-10  p-3'>
                     {Data.map((item) => (
-                        <div className='flex items-center mt-3  space-x-2 text-md pl-3 hover:bg-[#0B5CFF] p-1 hover:text-white rounded-lg cursor-pointer'>
+                        <div className='flex items-center mt-1  space-x-2 text-sm pl-3 hover:bg-[#0B5CFF] p-1 hover:text-white rounded-lg cursor-pointer'>
                             <h1>{item.name}</h1>
                         </div>
                     ))}
                 </div>
             )}
+            </div>
         </div>
     )
 }

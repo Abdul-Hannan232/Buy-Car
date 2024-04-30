@@ -39,7 +39,7 @@ const UsedCar = () => {
                         </div>
                     )}
                 </div>
-                <div className='w-full'>
+                <div className='w-full '>
                     <div className='w-full lg:flex items-end justify-between'>
                         <div>
                             <p className='text-[#0B5CFF] font-medium'>12,530 Results</p>
@@ -47,7 +47,7 @@ const UsedCar = () => {
                         </div>
                         <div className='lg:block hidden'>
                             <div className='bg-[#0B5CFF] text-white rounded-xl p-3 w-52 h-10 flex gap-2 items-center justify-center'>
-                                <RxCrossCircled className='text-xl'/>
+                                <RxCrossCircled className='text-xl' />
                                 <p className='text-lg'>Clear All Filters</p>
                             </div>
                         </div>
@@ -77,7 +77,7 @@ const UsedCar = () => {
                             </div>
                         )}
                     </div>
-                    <PopularCars column={"12"} Data={HomeData} grid={"xl:grid-cols-3"} color={"#D3E2FF"} textColor={'text-[#0B5CFF]'} borderRadius={"2xl"}/>
+                    <PopularCars column={"12"} Data={HomeData} grid={"xl:grid-cols-3"} color={"#D3E2FF"} textColor={'text-[#0B5CFF]'} borderRadius={"2xl"} />
 
                 </div>
 
