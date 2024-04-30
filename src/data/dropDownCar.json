@@ -1,0 +1,34 @@
+[
+    {
+        "image": "/image 6.png",
+        "name": "Suv/ Crossover"
+    },
+    {
+        "image": "/image 7.png",
+        "name": "Sedan"
+    },
+    {
+        "image": "/image 8.png",
+        "name": "Pickup truck"
+    },
+    {
+        "image": "/image 9.png",
+        "name": "Hatchback"
+    },
+    {
+        "image": "/image 10.png",
+        "name": "Convertible"
+    },
+    {
+        "image": "/image 11.png",
+        "name": "Wagon"
+    },
+    {
+        "image": "/image 7.png",
+        "name": "Coupe"
+    },
+    {
+        "image": "/image 5.png",
+        "name": "Minivan"
+    }
+]

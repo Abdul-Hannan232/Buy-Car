@@ -42,8 +42,8 @@ const UsedCar = () => {
                 <div className='w-full'>
                     <div className='w-full lg:flex items-end justify-between'>
                         <div>
-                            <p className='text-[#0B5CFF]'>12,530 Results</p>
-                            <h1 className='xl:text-4xl md:text-3xl text-xl font-bold text-[#1A202C]'>Explore Used Cars For Sale</h1>
+                            <p className='text-[#0B5CFF] font-medium'>12,530 Results</p>
+                            <h1 className='xl:text-4xl md:text-4xl text-xl font-medium text-[#1A202C]'>Explore Used Cars For Sale</h1>
                         </div>
                         <div className='lg:block hidden'>
                             <div className='bg-[#0B5CFF] text-white rounded-xl p-3 w-52 h-10 flex gap-2 items-center justify-center'>
@@ -55,7 +55,7 @@ const UsedCar = () => {
                     <div className='w-full bg-white mt-5 rounded-xl lg:flex p-3 items-center gap-2'>
                         <div className='w-full relative lg:mb-0 mb-2'>
                             <CiSearch className='absolute md:left-8 left-4 md:top-4 top-2 text-[#90A3BF] md:text-3xl text-xl ' />
-                            <input type='text' placeholder='Search by keyword' className='md:text-lg bg-[#F6F7F9] text-sm text-[#90A3BF] focus:border-[#0B5CFF] outline-none border-2 border-white w-full md:pl-16 pl-10 md:p-4 p-2 md:rounded-xl rounded-lg ' />
+                            <input type='text' placeholder='Search by keyword' className='md:text-lg bg-[#F6F7F9] text-sm text-[#90A3BF] focus:border-[#0B5CFF] outline-none border-2 border-white w-full md:pl-16 pl-10 md:p-4 p-2 md:rounded-2xl rounded-lg ' />
                         </div>
                         <HighestPrice Data={PriceData} title={"Sort by"} subTitle={"Highest Price"} />
                     </div>
@@ -77,7 +77,7 @@ const UsedCar = () => {
                             </div>
                         )}
                     </div>
-                    <PopularCars Data={HomeData} grid={"xl:grid-cols-3"} color={"#D3E2FF"} textColor={'text-[#0B5CFF]'} borderRadius={"2xl"}/>
+                    <PopularCars column={"3"} Data={HomeData} grid={"xl:grid-cols-3"} color={"#D3E2FF"} textColor={'text-[#0B5CFF]'} borderRadius={"2xl"}/>
 
                 </div>
 

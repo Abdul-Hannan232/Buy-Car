@@ -2,9 +2,11 @@
 import React, { useState } from 'react'
 import { MdOutlineKeyboardArrowUp } from "react-icons/md";
 import { MdKeyboardArrowDown } from "react-icons/md";
+import DropdownWithcar from "../component/dropdownWithCar"
 import DropdownWithSearch from "../component/dropdownWithSearch"
 import CarData from "../../data/styleCars.json"
 import CarColor from "../../data/carColor.json"
+import DropddownCar from "../../data/dropDownCar.json"
 const Style = () => {
     const [fundDrop, setFundDrop] = useState(false)
     const fundamentalsDropdown = () => {
@@ -22,7 +24,7 @@ const Style = () => {
                         <hr className='border my-3' />
 
                         {/* first drop down */}
-                        <DropdownWithSearch Data={CarData} title="Model Category" subTitle="Luxury" />
+                        <DropdownWithcar Data={DropddownCar} title="Model Category" subTitle="Luxury" />
 
                         {/* second dropdown */}
 
