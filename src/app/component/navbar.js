@@ -33,17 +33,17 @@ const Navbar = () => {
 
                 <div className='xl:block hidden'>
                     <ul className='text-md flex items-center xl:space-x-10 space-x-4'>
-                        <li className={activeLink === 'Home' ? 'text-blue-500' : 'hover:text-blue-500'}>
+                        <li className={activeLink === 'Home' ? 'text-[#0B5CFF]' : 'hover:text-blue-500'}>
                             <Link href="/" onClick={() => setActiveLink('Home')}>
                                 Home
                             </Link>
                         </li>
-                        <li className={activeLink === 'Used Cars' ? 'text-blue-500' : 'hover:text-blue-500'}>
+                        <li className={activeLink === 'Used Cars' ? 'text-[#0B5CFF]' : 'hover:text-blue-500'}>
                             <Link href="/usedCar" onClick={() => setActiveLink('Used Cars')}>
                                 Used Cars
                             </Link>
                         </li>
-                        <li className='hover:text-blue-500'>
+                        <li className='hover:text-[#0B5CFF]'>
                             <Link href="/">Car Payment Calculator</Link>
                         </li>
                     </ul>
