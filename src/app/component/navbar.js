@@ -7,7 +7,6 @@ import { IoIosMenu } from "react-icons/io";
 import { RiHome5Line } from "react-icons/ri";
 import { LiaCarSolid } from "react-icons/lia";
 import { TbCalculator } from "react-icons/tb";
-import { useRef } from 'react';
 const Navbar = () => {
     const [activeLink, setActiveLink] = useState('Home');
     const [activeButton, setActiveButton] = useState('signup');
@@ -39,13 +38,13 @@ const Navbar = () => {
                                 Home
                             </Link>
                         </li>
-                        <li className={activeLink === 'UsedCars' ? 'text-blue-500' : 'hover:text-blue-500'}>
-                            <Link href="/usedCar" onClick={() => setActiveLink('UsedCars')}>
+                        <li className={activeLink === 'Used Cars' ? 'text-blue-500' : 'hover:text-blue-500'}>
+                            <Link href="/usedCar" onClick={() => setActiveLink('Used Cars')}>
                                 Used Cars
                             </Link>
                         </li>
                         <li className='hover:text-blue-500'>
-                            <Link href="#">Car Payment Calculator</Link>
+                            <Link href="/">Car Payment Calculator</Link>
                         </li>
                     </ul>
                 </div>
