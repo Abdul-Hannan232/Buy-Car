@@ -130,19 +130,19 @@ export default function Home() {
                     <hr className='border my-3' />
                     <div className='relative  w-full '>
                         <h1 className='text-sm text-[#1A202C] absolute left-3 top-5'>Name</h1>
-                        <input type='text ' placeholder='Chris Dewlon' className='outline-none hover:border-[#0B5CFF] border-2   bg-[#F6F7F9]  w-full  mt-2 rounded-xl pt-7 pb-3  text-sm px-3 text-[#90A3BF]' />
+                        <input type='text ' placeholder='Chris Dewlon' className='outline-none hover:border-[#0B5CFF] border-2   bg-[#F6F7F9]  w-full  mt-2 rounded-xl pt-7 pb-3  md:text-sm text-xs px-3 text-[#90A3BF]' />
                     </div>
                     <div className='relative mt-3 w-full'>
                         <h1 className='text-sm text-[#1A202C] absolute left-3 top-5'>Email  </h1>
-                        <input type='text ' placeholder='dewlon@gmail.com' className='outline-none hover:border-[#0B5CFF] border-2  bg-[#F6F7F9]  w-full  mt-2 rounded-xl  pt-7 pb-3  text-sm px-3 text-[#90A3BF]' />
+                        <input type='text ' placeholder='dewlon@gmail.com' className='outline-none hover:border-[#0B5CFF] border-2  bg-[#F6F7F9]  w-full  mt-2 rounded-xl  pt-7 pb-3  md:text-sm text-xs px-3 text-[#90A3BF]' />
                     </div>
                     <div className='relative mt-3 w-full'>
                         <h1 className='text-sm text-[#1A202C] absolute left-3 top-5'>Phone</h1>
-                        <input type='text ' placeholder='123 456 789' className=' outline-none hover:border-[#0B5CFF] border-2 bg-[#F6F7F9]  w-full  mt-2 rounded-xl pt-7 pb-3 text-sm px-3 text-[#90A3BF]' />
+                        <input type='text ' placeholder='123 456 789' className=' outline-none hover:border-[#0B5CFF] border-2 bg-[#F6F7F9]  w-full  mt-2 rounded-xl pt-7 pb-3 md:text-sm text-xs px-3 text-[#90A3BF]' />
                     </div>
                     <div className='relative mt-3 w-full'>
                         <h1 className='text-sm text-[#1A202C] absolute left-3 top-5'>Reason For Contact</h1>
-                        <input type='text ' placeholder='Check availability' className='outline-none hover:border-[#0B5CFF] border-2  bg-[#F6F7F9]  w-full  mt-2 rounded-xl pt-7 pb-3 text-sm px-3 text-[#90A3BF]' />
+                        <input type='text ' placeholder='Check availability' className='outline-none hover:border-[#0B5CFF] border-2  bg-[#F6F7F9]  w-full  mt-2 rounded-xl pt-7 pb-3 md:text-sm text-xs px-3 text-[#90A3BF]' />
                     </div>
                     <div className='relative   mt-3    w-full'>
                         <h1 className='text-sm text-[#1A202C] absolute left-3 top-5'>Message</h1>

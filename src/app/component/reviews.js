@@ -62,7 +62,7 @@ const reviews = ({ grid, column }) => {
                       </div>
                     </div>
                   </div>
-                  <p className='text-[#90A3BF] lg:w-[300px] mx-auto text-sm mt-5'>Absolutely fantastic experience at Sunshine Honda Dealership! From the moment I walked in, the staff was friendly and attentive. They helped me find the perfect Honda Civic that fit my needs and budget. The buying process was smooth and transparent, and I never felt pressured. The car was in great condition, and the dealership even threw in some extra perks. I highly recommend Sunshine Honda to anyone in the market for a new or used car.</p>
+                  <p className='text-[#90A3BF] lg:w-[300px] mx-auto md:text-sm text-xs font-light mt-5'>Absolutely fantastic experience at Sunshine Honda Dealership! From the moment I walked in, the staff was friendly and attentive. They helped me find the perfect Honda Civic that fit my needs and budget. The buying process was smooth and transparent, and I never felt pressured. The car was in great condition, and the dealership even threw in some extra perks. I highly recommend Sunshine Honda to anyone in the market for a new or used car.</p>
                 </div>
               ))}
             </div>
