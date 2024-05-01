@@ -8,6 +8,38 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+@keyframes zoom-in {
+  0% {
+      opacity: 0;
+      transform: scale(0.5);
+  }
+  100% {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+@keyframes zoom-out {
+  0% {
+      opacity: 1;
+      transform: scale(1);
+  }
+  100% {
+      opacity: 0;
+      transform: scale(0.5);
+  }
+}
+
+.zoom-in {
+  animation: zoom-in 0.5s ease-out;
+}
+
+.zoom-out {
+  animation: zoom-out 0.5s ease-in;
+}
+
+
+
 * {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-optical-sizing: auto;

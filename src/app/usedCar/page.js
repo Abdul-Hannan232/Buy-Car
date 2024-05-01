@@ -11,13 +11,33 @@ import { RxCrossCircled } from "react-icons/rx";
 import { CiSearch } from "react-icons/ci";
 import HighestPrice from '../component/highestPrice';
 import PriceData from "../../data/highestPrice.json"
-import HomeData from "../../data/home.json"
+import HomeDataJson from "../../data/home.json"
 import PopularCars from '../component/popularCars';
 const UsedCar = () => {
+    const [HomeData, setHomeData] = useState(HomeDataJson);
     const [filter, setFilter] = useState(false)
     const filterDrop = () => {
         setFilter(!filter)
     }
+
+
+    const filterData = (inputValue) => {
+        const filteredCars = HomeData.filter(car => {
+            return car.name.toLowerCase().includes(inputValue.toLowerCase()) ||
+                car.building.toLowerCase().includes(inputValue.toLowerCase());
+        });
+  if(inputValue)
+  {
+        setHomeData(filteredCars); // Log the filtered cars array
+    }else{
+        setHomeData(HomeDataJson)
+    }};
+
+    // Example usage: Call filterData function when the input value changes
+    const handleInputChange = (event) => {
+        const inputValue = event.target.value;
+        filterData(inputValue); // Filter the data based on the input value
+    };
     return (
         <div className='lg:mt-40 mt-24 h-screen w-[90%] mx-auto xl:mb-[1700px] md:mb-[2200px] relative mb-[4700px]  '>
             <div className=' lg:flex justify-around gap-10'>
@@ -42,7 +62,7 @@ const UsedCar = () => {
                 <div className='w-full '>
                     <div className='w-full lg:flex items-end justify-between'>
                         <div>
-                            <p className='text-[#0B5CFF] font-medium'>12,530 Results</p>
+                            <p className='text-[#0B5CFF] font-medium'>{HomeData.length} Results</p>
                             <h1 className='xl:text-4xl md:text-4xl text-xl font-medium text-[#1A202C]'>Explore Used Cars For Sale</h1>
                         </div>
                         <div className='lg:block hidden'>
@@ -55,10 +75,10 @@ const UsedCar = () => {
                     <div className='w-full bg-white mt-5 rounded-xl lg:flex p-3 items-center gap-2'>
                         <div className='w-full relative lg:mb-0 mb-2'>
                             <CiSearch className='absolute md:left-8 left-4 md:top-4 top-2 text-[#90A3BF] md:text-3xl text-xl ' />
-                            <input type='text' placeholder='Search by keyword' className='md:text-lg bg-[#F6F7F9] text-sm text-[#90A3BF] focus:border-[#0B5CFF] outline-none border-2 border-white w-full md:pl-16 pl-10 md:p-4 p-2 md:rounded-2xl rounded-lg ' />
+                            <input type='text' placeholder='Search by keyword' onChange={handleInputChange} className='md:text-lg bg-[#F6F7F9] text-sm text-[#90A3BF] focus:border-[#0B5CFF] outline-none border-2 border-white w-full md:pl-16 pl-10 md:p-4 p-2 md:rounded-2xl rounded-lg ' />
                         </div>
                         <div className='w'>
-                        <HighestPrice Data={PriceData} title={"Sort by"} subTitle={"Highest Price"} />
+                            <HighestPrice Data={PriceData} title={"Sort by"} subTitle={"Highest Price"} />
                         </div>
                     </div>
                     <div className='bg-white  md:hidden block mt-3 lg:w-80 p-3 h-[90px] rounded-xl'>
