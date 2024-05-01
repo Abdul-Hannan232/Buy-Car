@@ -97,7 +97,10 @@ export default function Home() {
                                             <h1 className='text-[#90A3BF]  md:text-sm text-md font-medium'>Sunshine Honda</h1>
                                         </div>
                                     </div>
-                                    <RxExternalLink className='text-[#90A3BF] text-xl ' />
+                                  <Link href="/dealership">
+                                  <RxExternalLink className='text-[#90A3BF] cursor-pointer text-xl ' />
+                                    
+                                    </Link> 
 
                                 </div>
                                 <div className='flex  mt-5 items-center lg:my-2 my-1 gap-2 space-x-1'>
@@ -143,9 +146,9 @@ export default function Home() {
                     </div>
                     <div className='relative   mt-3    w-full'>
                         <h1 className='text-sm text-[#1A202C] absolute left-3 top-5'>Message</h1>
-                        <textarea type='text ' placeholder='Im interested in learning more about your inventory of [specific car make/model]. Could you please provide me with additional details such as available trim levels, pricing options, and any current promotions or discounts? Also, Id appreciate any insights you can offer regarding financing options and trade-in possibilities.' className=' bg-[#F6F7F9]  w-full  mt-2 rounded-xl pt-8 pb-4 h-48 utline-none hover:border-[#0B5CFF] border-2   text-sm px-3 text-[#90A3BF]' />
+                        <textarea type='text ' placeholder='Im interested in learning more about your inventory of [specific car make/model]. Could you please provide me with additional details such as available trim levels, pricing options, and any current promotions or discounts? Also, Id appreciate any insights you can offer regarding financing options and trade-in possibilities.' className=' bg-[#F6F7F9]  w-full  mt-2 rounded-xl md:pt-8 pt-12 pb-4 h-48 utline-none hover:border-[#0B5CFF] border-2   md:text-sm text-[10px] px-3 text-[#90A3BF]' />
                     </div>
-                    <button className='bg-[#0B5CFF] text-white text-center p-3 w-full rounded-xl mt-3 text-xl'>Submit</button>
+                    <button className='bg-[#0B5CFF] text-white text-center hover:bg-opacity-90 cursor-pointer p-3 w-full rounded-xl mt-3 text-xl'>Submit</button>
                 </div>
 
             </div>
@@ -216,8 +219,10 @@ export default function Home() {
                     <div className='flex gap-2 items-center '>
                         <Image src="/redLogo.png" alt="image" width={44} height={44} className='' />
                         <div>
-                            <h1 className=' flex items-center gap-1 font-bold lg:text-sm text-[9px] text-[#1A202C]'>DealerShip
-                                <RxExternalLink className='text-[#90A3BF] lg:text-lg text-sm ' />
+                            
+                          
+                              <h1 className=' flex items-center gap-1 font-bold lg:text-sm text-[9px] text-[#1A202C]'>DealerShip
+                              <Link href="/dealership"><RxExternalLink className='text-[#90A3BF] lg:text-lg text-sm ' /></Link> 
                             </h1>
                             <h1 className='text-[#90A3BF]  lg:text-sm text-[9px] font-medium'>Sunshine Honda</h1>
                         </div>
@@ -240,7 +245,7 @@ export default function Home() {
             </div>
           <Link href="/dealership">
           <div className='flex justify-center mb-40 mt-16'>
-                <button className='bg-[#0B5CFF] md:w-96 w-60 md:text-xl text-sm font-medium rounded-xl md:p-5 p-3  mx-auto text-center text-white'>More Cars
+                <button className='bg-[#0B5CFF] hover:bg-opacity-90 cursor-pointer md:w-96 w-60 md:text-xl text-sm font-medium rounded-xl md:p-5 p-3  mx-auto text-center text-white'>More Cars
                     from this Dealership</button>
             </div>
             </Link>  

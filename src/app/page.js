@@ -22,7 +22,7 @@ const Home = () => {
       </div>
         <PopularCars column={"8"} Data={HomeData} grid={"xl:grid-cols-4"} color={"#0B5CFF"} textColor={'text-[#FFFFFF]'} />
         <Link href="/usedCar">
-          <button className=' buttonBackground md:w-60 w-44 md:p-5 p-3 rounded-2xl  text-center md:text-lg text-sm text-white  flex justify-center mx-auto mt-10 mb-32'>Show more cars</button>
+          <button className='hover:bg-opacity-90 cursor-pointer buttonBackground md:w-60 w-44 md:p-5 p-3 rounded-2xl  text-center md:text-lg text-sm text-white  flex justify-center mx-auto mt-10 mb-32'>Show more cars</button>
         </Link>
       </div>
     </>

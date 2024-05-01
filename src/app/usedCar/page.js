@@ -22,7 +22,7 @@ const UsedCar = () => {
         <div className='lg:mt-40 mt-24 h-screen w-[90%] mx-auto xl:mb-[1700px] md:mb-[2200px] relative mb-[4700px]  '>
             <div className=' lg:flex justify-around gap-10'>
                 <div className='bg-white md:block hidden mt-20   h-[90px] rounded-xl'>
-                    <button onClick={filterDrop} className='bg-[#0B5CFF] w-72 p-4 m-4 text-white rounded-2xl flex items-center justify-between'>
+                    <button onClick={filterDrop} className='bg-[#0B5CFF] hover:bg-opacity-90 cursor-pointer w-72 p-4 m-4 text-white rounded-2xl flex items-center justify-between'>
                         <div className='flex items-center gap-2'>
                             <TbFilterSearch className='text-3xl' />
                             <h1 className='text-xl'>Filters</h1>
@@ -35,7 +35,7 @@ const UsedCar = () => {
                             <Style />
                             <Performence />
                             <Features />
-                            <button className='bg-[#0B5CFF] text-white p-3 rounded-xl mt-3 w-full text-center text-xl'>Update</button>
+                            <button className='bg-[#0B5CFF] hover:bg-opacity-90 cursor-pointer text-white p-3 rounded-xl mt-3 w-full text-center text-xl'>Update</button>
                         </div>
                     )}
                 </div>
@@ -46,7 +46,7 @@ const UsedCar = () => {
                             <h1 className='xl:text-4xl md:text-4xl text-xl font-medium text-[#1A202C]'>Explore Used Cars For Sale</h1>
                         </div>
                         <div className='lg:block hidden'>
-                            <div className='bg-[#0B5CFF] cursor-pointer text-white rounded-xl p-3 w-52 h-10 flex gap-2 items-center justify-center'>
+                            <div className='bg-[#0B5CFF] hover:bg-opacity-90 cursor-pointer cursor-pointer text-white rounded-xl p-3 w-52 h-10 flex gap-2 items-center justify-center'>
                                 <RxCrossCircled className='text-xl' />
                                 <p className='text-lg'>Clear All Filters</p>
                             </div>
