@@ -8,7 +8,7 @@ import { RxExternalLink } from "react-icons/rx";
 import CarDetail from "../../data/carDetail.json"
 import Reviews from "../component/reviews.js"
 import renderStars from '@/utils/rating';
-
+import Link from "next/link"
 export default function Home() {
     const style = [
         {
