@@ -46,7 +46,7 @@ const UsedCar = () => {
                             <h1 className='xl:text-4xl md:text-4xl text-xl font-medium text-[#1A202C]'>Explore Used Cars For Sale</h1>
                         </div>
                         <div className='lg:block hidden'>
-                            <div className='bg-[#0B5CFF] text-white rounded-xl p-3 w-52 h-10 flex gap-2 items-center justify-center'>
+                            <div className='bg-[#0B5CFF] cursor-pointer text-white rounded-xl p-3 w-52 h-10 flex gap-2 items-center justify-center'>
                                 <RxCrossCircled className='text-xl' />
                                 <p className='text-lg'>Clear All Filters</p>
                             </div>

@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { IoHeart } from "react-icons/io5";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,7 +9,6 @@ import { TbBuilding } from "react-icons/tb";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import renderStars from '@/utils/rating';
-
 const PopularCars = ({ Data, grid, color, textColor, column }) => {
     const [clickedItems, setClickedItems] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
@@ -28,8 +27,15 @@ const PopularCars = ({ Data, grid, color, textColor, column }) => {
         // Show toast notification
         toast.success(message);
     };
+    const listRef = useRef(null);
 
-    const paginate = pageNumber => setCurrentPage(pageNumber);
+    const paginate = (pageNumber) => {
+        // Scroll to the top of the page
+        window.scrollTo({ top: 300, behavior: 'smooth' });
+        setCurrentPage(pageNumber);
+        // Your pagination logic here
+        // ...
+    };
 
     return (
         <div className=' mx-auto md:mt-14 mt-5  '>
@@ -72,18 +78,20 @@ const PopularCars = ({ Data, grid, color, textColor, column }) => {
             </div>
 
             {/* Pagination */}
-            <ul className="flex justify-end">
-                {[...Array(Math.min(10, Math.ceil(Data.length / itemsPerPage))).keys()].map(number => (
-                    <li key={number} className="mx-1 my-1">
-                        <button
-                            onClick={() => paginate(number + 1)}
-                            className={`px-3 py-1 rounded-lg ${currentPage === number + 1 ? 'bg-[#0B5CFF] text-white' : 'bg-white'}`}
-                        >
-                            {number + 1}
-                        </button>
-                    </li>
-                ))}
-            </ul>
+            <ul className="flex justify-end" ref={listRef}>
+            {[...Array(Math.min(10, Math.ceil(Data.length / itemsPerPage))).keys()].map((number) => (
+                <li key={number} className="mx-1 my-1">
+                    <button
+                        onClick={() => paginate(number + 1)}
+                        className={`px-3 py-1 rounded-lg ${
+                            currentPage === number + 1 ? 'bg-[#0B5CFF] text-white' : 'bg-white'
+                        }`}
+                    >
+                        {number + 1}
+                    </button>
+                </li>
+            ))}
+        </ul>
 
 
         </div>

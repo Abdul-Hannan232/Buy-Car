@@ -7,7 +7,9 @@ import { IoIosMenu } from "react-icons/io";
 import { RiHome5Line } from "react-icons/ri";
 import { LiaCarSolid } from "react-icons/lia";
 import { TbCalculator } from "react-icons/tb";
+import { useRef } from 'react';
 const Navbar = () => {
+    const [activeLink, setActiveLink] = useState('Home');
     const [activeButton, setActiveButton] = useState('signup');
     const [dropDown, setDropDown] = useState(false)
     const handleLoginClick = () => {
@@ -31,10 +33,20 @@ const Navbar = () => {
                 </Link>
 
                 <div className='xl:block hidden'>
-                    <ul className='text-md  flex items-center xl:space-x-10 space-x-4  ' >
-                        <li className='hover:text-[#0B5CFF] '><Link href="/">Home</Link></li>
-                        <li className='hover:text-[#0B5CFF]'><Link href="/usedCar">Used Cars</Link></li>
-                        <li className='hover:text-[#0B5CFF]'><Link href="#">Car Payment Calculator</Link></li>
+                    <ul className='text-md flex items-center xl:space-x-10 space-x-4'>
+                        <li className={activeLink === '/' ? 'text-blue-500' : 'hover:text-blue-500'}>
+                            <Link href="/" onClick={() => setActiveLink('Home')}>
+                                Home
+                            </Link>
+                        </li>
+                        <li className={activeLink === '/usedCar' ? 'text-blue-500' : 'hover:text-blue-500'}>
+                            <Link href="/usedCar" onClick={() => setActiveLink('UsedCars')}>
+                                Used Cars
+                            </Link>
+                        </li>
+                        <li className='hover:text-blue-500'>
+                            <Link href="#">Car Payment Calculator</Link>
+                        </li>
                     </ul>
                 </div>
                 <div className='flex items-center xl:space-x-3 space-x-2'>
