@@ -4,7 +4,7 @@ import PopularCars from './component/popularCars';
 import HomeData from "../data/home.json"
 import Link from "next/link"
 const Home = () => {
-// hello
+  // hello
   return (
     <>
       <div className='homebanner w-full md:h-[80vh] h-[40vh] flex flex-col justify-end text-center items-end'>
@@ -20,10 +20,10 @@ const Home = () => {
         <h1 className='md:text-4xl text-2xl font-medium text-[#90A3BF]'>Popular Cars</h1>
         <button className='text-[#0B5CFF] bg-[#0B5CFF] bg-opacity-30 md:rounded-xl rounded-md cursor-pointer md:p-3 p-1 md:w-24 w-20 font-medium md:text-md text-sm text-center'>View All</button>
       </div>
-        <PopularCars column={"8"} Data={HomeData} grid={"xl:grid-cols-4"} color={"#0B5CFF"}   textColor={'text-[#FFFFFF]'} />
-     <Link href="/usedCar">
-     <button className=' buttonBackground md:w-60 w-44 md:p-5 p-3 rounded-2xl  text-center md:text-lg text-sm text-white  flex justify-center mx-auto mt-10 mb-32'>Show more cars</button>      
-      </Link> 
+        <PopularCars column={"8"} Data={HomeData} grid={"xl:grid-cols-4"} color={"#0B5CFF"} textColor={'text-[#FFFFFF]'} />
+        <Link href="/usedCar">
+          <button className=' buttonBackground md:w-60 w-44 md:p-5 p-3 rounded-2xl  text-center md:text-lg text-sm text-white  flex justify-center mx-auto mt-10 mb-32'>Show more cars</button>
+        </Link>
       </div>
     </>
   )

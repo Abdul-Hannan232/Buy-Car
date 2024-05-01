@@ -57,7 +57,9 @@ const UsedCar = () => {
                             <CiSearch className='absolute md:left-8 left-4 md:top-4 top-2 text-[#90A3BF] md:text-3xl text-xl ' />
                             <input type='text' placeholder='Search by keyword' className='md:text-lg bg-[#F6F7F9] text-sm text-[#90A3BF] focus:border-[#0B5CFF] outline-none border-2 border-white w-full md:pl-16 pl-10 md:p-4 p-2 md:rounded-2xl rounded-lg ' />
                         </div>
+                        <div className='w'>
                         <HighestPrice Data={PriceData} title={"Sort by"} subTitle={"Highest Price"} />
+                        </div>
                     </div>
                     <div className='bg-white  md:hidden block mt-3 lg:w-80 p-3 h-[90px] rounded-xl'>
                         <button onClick={filterDrop} className='bg-[#0B5CFF] z-80 lg:w-72 p-4 w-full text-white rounded-2xl flex items-center justify-between'>

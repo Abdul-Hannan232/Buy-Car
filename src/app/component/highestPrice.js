@@ -17,9 +17,9 @@ const HighestPrice = ({ Data, title, subTitle }) => {
                 </div>
                 <MdKeyboardArrowDown className='text-2xl' />
             </div>
-            <div className='w-full'>
+            <div className=''>
             {porche && (
-                <div className='absolute left-0 z-40 w-60  bg-white right-10  p-3'>
+                <div className='absolute  z-40 md:w-64 w-full  bg-white right-0  p-3'>
                     {Data.map((item) => (
                         <div className='flex items-center mt-1  space-x-2 text-sm pl-3 hover:bg-[#0B5CFF] p-1 hover:text-white rounded-lg cursor-pointer'>
                             <h1>{item.name}</h1>
