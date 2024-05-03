@@ -38,7 +38,8 @@ const UsedCar = () => {
         // Set the filtered data
         let filteredCars;
     
-        if (typeof inputValue === 'string') {
+        if (typeof inputValue === 'string' && inputValue!="") {
+            console.log("test",inputValue)
             // If inputValue is a string, filter based on car name or building
             filteredCars = HomeData.filter(car => {
                 return car.name.toLowerCase().includes(inputValue.toLowerCase()) ||
