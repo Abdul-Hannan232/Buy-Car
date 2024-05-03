@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { MdKeyboardArrowDown } from "react-icons/md";
 
 const HighestPrice = ({ Data, title, subTitle }) => {
-    console.log(Data)
+  
     const [porche, setPorche] = useState(false)
     const porcheDrop = () => {
         setPorche(!porche)

@@ -14,6 +14,7 @@ import PriceData from "../../data/highestPrice.json"
 import HomeDataJson from "../../data/home.json"
 import PopularCars from '../component/popularCars';
 const UsedCar = () => {
+    const [checkedItems, setCheckedItems] = useState([]);
     const [HomeData, setHomeData] = useState(HomeDataJson);
     const [filter, setFilter] = useState(false)
     const filterDrop = () => {
@@ -21,23 +22,59 @@ const UsedCar = () => {
     }
 
 
+    // const filterData = (inputValue) => {
+    //     const filteredCars = HomeData.filter(car => {
+    //         return car.name.toLowerCase().includes(inputValue.toLowerCase()) ||
+    //             car.building.toLowerCase().includes(inputValue.toLowerCase());
+    //     });
+    //     if (inputValue) {
+    //         setHomeData(filteredCars); // Log the filtered cars array
+    //     } else {
+    //         setHomeData(HomeDataJson)
+    //     }
+    // };
+
     const filterData = (inputValue) => {
-        const filteredCars = HomeData.filter(car => {
-            return car.name.toLowerCase().includes(inputValue.toLowerCase()) ||
-                car.building.toLowerCase().includes(inputValue.toLowerCase());
-        });
-  if(inputValue)
-  {
-        setHomeData(filteredCars); // Log the filtered cars array
-    }else{
-        setHomeData(HomeDataJson)
-    }};
+        // Set the filtered data
+        let filteredCars;
+    
+        if (typeof inputValue === 'string') {
+            // If inputValue is a string, filter based on car name or building
+            filteredCars = HomeData.filter(car => {
+                return car.name.toLowerCase().includes(inputValue.toLowerCase()) ||
+                    car.building.toLowerCase().includes(inputValue.toLowerCase());
+            });
+        } else if (Array.isArray(inputValue) && inputValue.length > 0) {
+            // If inputValue is a non-empty array, extract names from objects and filter based on those names
+            const names = inputValue.map(obj => obj.name.toLowerCase());
+            filteredCars = HomeData.filter(car => {
+                return names.includes(car.make.toLowerCase());
+            });
+        } else {
+            // If inputValue is empty or not an array, set HomeData to HomeDataJson
+            setHomeData(HomeDataJson);
+            return;
+        }
+    
+        // Set HomeData to filteredCars
+        setHomeData(filteredCars);
+    };
+    
+    
+ 
 
     // Example usage: Call filterData function when the input value changes
     const handleInputChange = (event) => {
         const inputValue = event.target.value;
+
         filterData(inputValue); // Filter the data based on the input value
     };
+
+    const handleFilterClick = (checkBox) => {
+        filterData(checkBox)
+    }
+
+
     return (
         <div className='lg:mt-40 mt-24 h-screen w-[90%] mx-auto xl:mb-[1700px] md:mb-[2200px] relative mb-[4700px]  '>
             <div className=' lg:flex justify-around gap-10'>
@@ -51,7 +88,7 @@ const UsedCar = () => {
                     </button>
                     {filter && (
                         <div className='bg-white w-80  p-3 -mt-4 rounded-xl'>
-                            <Fundamentals />
+                            <Fundamentals handleFilterClick={handleFilterClick} />
                             <Style />
                             <Performence />
                             <Features />

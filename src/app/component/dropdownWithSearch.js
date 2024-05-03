@@ -4,12 +4,32 @@ import { CiSearch } from "react-icons/ci";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { TiTick } from "react-icons/ti";
 
-const DropdownWithSearch = ({ Data, title, subTitle, color }) => {
-    console.log(Data)
+const DropdownWithSearch = ({ Data, title, subTitle, color,handleFilterClick }) => {
+    
     const [porche, setPorche] = useState(false)
     const porcheDrop = () => {
         setPorche(!porche)
     }
+    const [checkedItems, setCheckedItems] = useState(new Set());
+
+    const handleCheckboxChange = (name) => {
+        const newCheckedItems = new Set(checkedItems);
+        if (newCheckedItems.has(name)) {
+            newCheckedItems.delete(name);
+        } else {
+            newCheckedItems.add(name);
+        }
+        setCheckedItems(newCheckedItems);
+
+        const filteredData = Data.filter(item => {
+        
+            if (newCheckedItems.has('All')) return true // If 'All' is checked, show all data
+            return newCheckedItems.has(item.name);
+
+        });
+        handleFilterClick(filteredData);
+    };
+     
     return (
         <div className=''>
 
@@ -33,7 +53,10 @@ const DropdownWithSearch = ({ Data, title, subTitle, color }) => {
                     </div>
                     {Data.map((item) => (
                         <div className='flex items-center  space-x-2 text-md pl-3 hover:bg-[#0B5CFF] p-1 hover:text-white rounded-lg cursor-pointer'>
-                            <input type="checkbox" className='border-[#787878] w-4 h-4' />
+                            <input type="checkbox" className='border-[#787878] w-4 h-4'
+                             checked={checkedItems.has(item.name)}
+                             onChange={() => handleCheckboxChange(item.name)}
+                            />
                             <div className={`w-5 h-5 rounded-md`} style={{ backgroundColor: item.colorCode }} ></div>
                             <h1>{item.name}</h1>
                             <p className='text-[10px] text-[#90A3BF]'>{item.count}</p>

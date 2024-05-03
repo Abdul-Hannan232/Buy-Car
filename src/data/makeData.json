@@ -4,39 +4,23 @@
         "count": "(2,367)"
     },
     {
-        "name": "Honda",
-        "count": "(989)"
-    },
-    {
-        "name": "Ford",
-        "count": "(475)"
-    },
-    {
         "name": "Tesla",
-        "count": "(281)"
+        "count": "(22)"
     },
     {
-        "name": "Volkswagen",
-        "count": "(56)"
-    },
-    {
-        "name": "BMW",
-        "count": "(80)"
-    },
-    {
-        "name": "Chevrolet",
-        "count": "(13)"
-    },
-    {
-        "name": "Mercedes-Benz",
-        "count": "(6)"
-    },
-    {
-        "name": "Jeep",
+        "name": "Honda",
         "count": "(32)"
     },
     {
-        "name": "Porche",
-        "count": "(18)"
+        "name": "Rolls-Royce",
+        "count": "(234)"
+    },
+    {
+        "name": "MG",
+        "count": "(543)"
+    },
+    {
+        "name": "Lamborghini",
+        "count": "(987)"
     }
 ]

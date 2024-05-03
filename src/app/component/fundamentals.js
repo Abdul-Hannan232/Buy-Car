@@ -8,7 +8,7 @@ import DropdownWithSearch from '../component/dropdownWithSearch';
 import DropdownWithMaxMin from '../component/dropdownWithMaxMin';
 import minData from "../../data/minMax.json"
 import minYear from "../../data/minMaxYear.json"
-const Fundamentals = () => {
+const Fundamentals = ({handleFilterClick}) => {
   const [fundDrop, setFundDrop] = useState(false)
   const fundamentalsDropdown = () => {
     setFundDrop(!fundDrop)
@@ -25,11 +25,12 @@ const Fundamentals = () => {
             <hr className='border my-3' />
 
             {/* first drop down */}
-            <DropdownWithSearch Data={makePorch} title="Make" subTitle="Porch" />
+     
+            <DropdownWithSearch Data={makePorch} title="Make" handleFilterClick={handleFilterClick} subTitle="Porch" />
 
             {/* second dropdown */}
 
-            <DropdownWithSearch Data={model} title="Model" subTitle="GT3RS" />
+          <DropdownWithSearch Data={model} title="Model" subTitle="GT3RS" /> 
 
 
             <div className='bg-[#F6F7F9] rounded-xl mt-2 p-3 w-full '>
@@ -43,15 +44,15 @@ const Fundamentals = () => {
             <div className='flex  w-full items-center mt-10 gap-5'>
 
               <DropdownWithMaxMin title="Min Price" number="20,000" Data={minData} />
-              <DropdownWithMaxMin title="Max Price" number="80,000" Data={minData} />
+              <DropdownWithMaxMin title="Max Price" number="80,000" Data={minData} /> 
             </div>
 
             {/* Min Max Year */}
 
             <div className='flex  w-full items-center mt-10 gap-5'>
 
-              <DropdownWithMaxMin title="Min Year" number="2018" Data={minYear} />
-              <DropdownWithMaxMin title="Max Year" number="2023" Data={minYear} />
+             <DropdownWithMaxMin title="Min Year" number="2018" Data={minYear} />
+              <DropdownWithMaxMin title="Max Year" number="2023" Data={minYear} /> 
             </div>
             
             <div className='bg-[#F6F7F9] rounded-xl mt-10 p-3 w-full '>

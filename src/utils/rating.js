@@ -12,3 +12,6 @@ const renderStars = (rating) => {
 };
 
 export default renderStars;
+
+
+ 
