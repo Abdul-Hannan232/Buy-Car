@@ -10,15 +10,21 @@ const Home = () => {
   const [HomeData, setHomeData] = useState(HomeDataJson);
 
 
+
+
+
   // Example usage: Call filterData function when the input value changes
   const handleInputChange = (event) => {
-    const inputValue = event.target.value;
-    filterData(inputValue); // Filter the data based on the input value
+    const inputValue = event.target.value.toLowerCase(); // Convert input value to lowercase for case-insensitive matching
+
+    const filtered = HomeDataJson.filter(item => item.name.toLowerCase().includes(inputValue)); // Filter based on input value
+
+    setHomeData(filtered); // Update filtered data state
   };
   // hello
   return (
     <>
-      <div className='homebanner w-full md:h-[70vh] h-[40vh] flex flex-col justify-end text-center items-end'>
+      <div className=' w-full md:h-[40vh] h-[25vh] flex flex-col justify-end text-center items-end'>
         <div className='md:w-[50%] w-[80%] mx-auto md:mb-20 mb-10'>
           <div className='w-full relative md:mt-5 mt-2'>
             <CiSearch className='absolute md:left-5 left-4 md:top-4 top-2 text-[#90A3BF] md:text-4xl text-xl ' />

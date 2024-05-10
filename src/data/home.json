@@ -133,7 +133,7 @@
   },
   {
     "id": 4,
-    "name": "Rolls-Royce Rolls-Royce",
+    "name": "Rolls-Royce",
     "quality": "Sedan",
     "country": "London, United Kingdom",
     "rating": 2,
@@ -166,7 +166,7 @@
   },
   {
     "id": 5,
-    "name": "Lamborghini Lamborghini",
+    "name": "Lamborghini",
     "quality": "Supercar",
     "country": "Sant'Agata Bolognese, Italy",
     "rating": 5,
@@ -331,7 +331,7 @@
   },
   {
     "id": 10,
-    "name": "Rolls-Royce Rolls-Royce",
+    "name": "Rolls-Royce",
     "quality": "Sedan",
     "country": "London, United Kingdom",
     "rating": 2,
@@ -364,7 +364,7 @@
   },
   {
     "id": 11,
-    "name": "Lamborghini Lamborghini",
+    "name": "Lamborghini",
     "quality": "Supercar",
     "country": "Sant'Agata Bolognese, Italy",
     "rating": 5,
@@ -529,7 +529,7 @@
   },
   {
     "id": 16,
-    "name": "Rolls-Royce Rolls-Royce",
+    "name": "Rolls-Royce",
     "quality": "Sedan",
     "country": "London, United Kingdom",
     "rating": 2,
@@ -562,7 +562,7 @@
   },
   {
     "id": 17,
-    "name": "Lamborghini Lamborghini",
+    "name": "Lamborghini",
     "quality": "Supercar",
     "country": "Sant'Agata Bolognese, Italy",
     "rating": 5,
@@ -731,7 +731,7 @@
   },
   {
     "id":22,
-    "name": "Rolls-Royce Rolls-Royce",
+    "name": "Rolls-Royce",
     "quality": "Sedan",
     "country": "London, United Kingdom",
     "rating": 2,
@@ -764,7 +764,7 @@
   },
   {
     "id": 23,
-    "name": "Lamborghini Lamborghini",
+    "name": "Lamborghini",
     "quality": "Supercar",
     "country": "Sant'Agata Bolognese, Italy",
     "rating": 5,
@@ -929,7 +929,7 @@
   },
   {
     "id": 28,
-    "name": "Rolls-Royce Rolls-Royce",
+    "name": "Rolls-Royce",
     "quality": "Sedan",
     "country": "London, United Kingdom",
     "rating": 2,
@@ -962,7 +962,7 @@
   },
   {
     "id": 29,
-    "name": "Lamborghini Lamborghini",
+    "name": "Lamborghini",
     "quality": "Supercar",
     "country": "Sant'Agata Bolognese, Italy",
     "rating": 5,
@@ -1127,7 +1127,7 @@
   },
   {
     "id": 34,
-    "name": "Rolls-Royce Rolls-Royce",
+    "name": "Rolls-Royce",
     "quality": "Sedan",
     "country": "London, United Kingdom",
     "rating": 2,
@@ -1160,7 +1160,7 @@
   },
   {
     "id": 35,
-    "name": "Lamborghini Lamborghini",
+    "name": "Lamborghini",
     "quality": "Supercar",
     "country": "Sant'Agata Bolognese, Italy",
     "rating": 5,
